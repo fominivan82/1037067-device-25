@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Неопознанный енот](https://up.htmlacademy.ru/htmlcss/25/user/1037067).
-* Наставник: [Александр Кошара](https://up.htmlacademy.ru/htmlcss/25/user/169035).
+* Наставник: [Александр Кошара](https://htmlacademy.ru/profile/rednaxxxela).
 
 ---
 
