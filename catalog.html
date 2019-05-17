@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Девайс</title>
+  </head>
+  <body>
+  <header class="main-header">
+    <a class="header-logo" href="index.html">
+      <img src="#"  alt="Логотип DEVICE">
+    </a>
+    <nav class="main-navigation">
+      <form class="site-panel" method="get">
+        <input name="s" placeholder="Поиск по сайту" type="search">
+       </form>
+      <ul class="site-panel-user">
+       <li><a href="#">Валентин Петухов</a></li>
+       <li><a href="#">Выйти</a></li>
+      </ul>
+     <ul class="site-panel">
+       <li><a href="#">Сравнить</a></li>
+       <li><a href="#">Корзина</a></li>
+     </ul>
+     <ul class="site-navigation">
+       <li><a href="#">Каталог товаров</a>
+         <ul class="submenu-cameras">
+            <li><a href=#>Виртуальная реальность</a></li>
+            <li><a href=#>Моноподы для селфи</a></li>
+            <li><a href=#>Экшн-камеры</a></li>
+        </ul>
+        <ul class="submenu-watch">
+           <li><a href=#>Фитнес браслеты</a></li>
+           <li><a href=#>Умные часы</a></li>
+       </ul>
+       <ul class="submenu-quadcopters">
+          <li><a href=#>Квадрокоптеры</a></li>
+       </ul>
+       </li><!--Здесь меню при наведении,
+          погуглил нашел, что можно сделать с помощью списков и CSS-->
+       <li><a href="#">Доставка</a></li>
+       <li><a href="#">Гарантия</a></li>
+       <li><a href="#">Контакты</a></li>
+     </ul>
+   </nav>
+  </header>
+  <main class="goods">
+    <h1 class="page-title">Моноподы для селфи</h1>
+    <ul class="breadcrumbs">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="catalog.html">Магазин</a></li>
+        <li class="breadcrumbs-current">Моноподы для селфи</li>
+      </ul>
+      <section class="filters">
+        <h2 class="visually-hidden">Фильтр товаров</h2><!--Позже скрыть-->
+        <!-- Здесь будет форма, боковые фильтры не делал поскольку в барбершопе их не делают( -->
+      </section>
+      <section class="catalog">
+        <h2 class="visually-hidden">Список моноподов для селфи</h2><!--Позже скрыть-->
+        <ul class="catalog-list">
+          <li class="catalog-item">
+            <h3>
+              <a href="#">
+                <span class="catalog-category">Любительская селфи-палка</span>
+              </a>
+            </h3>
+            <p class="catalog-item-image">
+              <a href="#">
+                <img src="img/product-1.jpg" width="220" height="165" alt="Любительская селфи-палка">
+              </a>
+            </p>
+            <p class="catalog-item-price">
+              <b>500 руб.</b>
+            </p>
+            <ul class="item-hover">
+              <li><button class="item-hover-basket" type="submit">В КОРЗИНУ</button></li>
+              <li><button class="item-hover-contrast" type="submit">Добавить к сравнению</button></li>
+            </ul><!--Всплывающее окно товара-->
+          </li>
+          <li class="catalog-item">
+            <h3>
+              <a href="#">
+                <span class="catalog-category">Профессиональная селфи-палка</span>
+              </a>
+            </h3>
+            <p class="catalog-item-image">
+              <a href="#">
+                <img src="img/product-2.jpg" width="220" height="165" alt="Профессиональная селфи-палка">
+              </a>
+            </p>
+            <p class="catalog-item-price">
+              <b>1 500 руб.</b>
+            </p>
+            <ul class="item-hover">
+              <li><button class="item-hover-basket" type="submit">В КОРЗИНУ</button></li>
+              <li><button class="item-hover-contrast" type="submit">Добавить к сравнению</button></li>
+            </ul><!--Всплывающее окно товара-->
+          </li>
+          <li class="catalog-item">
+            <h3>
+              <a href="#">
+                <span class="catalog-category">Непотопляемая селфи-палка</span>
+              </a>
+            </h3>
+            <p class="catalog-item-image">
+              <a href="#">
+                <img src="img/product-3.jpg" width="220" height="165" alt="Непотопляемая селфи-палка">
+              </a>
+            </p>
+            <p class="catalog-item-price">
+              <b>2 500 руб.</b>
+            </p>
+            <ul class="item-hover">
+              <li><button class="item-hover-basket" type="submit">В КОРЗИНУ</button></li>
+              <li><button class="item-hover-contrast" type="submit">Добавить к сравнению</button></li>
+            </ul><!--Всплывающее окно товара-->
+          </li>
+          <li class="catalog-item">
+            <h3>
+              <a href="#">
+                <span class="catalog-category">Селфи-палка «Следуй за мной»</span>
+              </a>
+            </h3>
+            <p class="catalog-item-image">
+              <a href="#">
+                <img src="img/product-4.jpg" width="220" height="165" alt="Селфи-палка «Следуй за мной»">
+              </a>
+            </p>
+            <p class="catalog-item-price">
+              <b>4 900 руб.</b>
+            </p>
+            <ul class="item-hover">
+              <li><button class="item-hover-basket" type="submit">В КОРЗИНУ</button></li>
+              <li><button class="item-hover-contrast" type="submit">Добавить к сравнению</button></li>
+            </ul><!--Всплывающее окно товара-->
+          </li>
+        </ul>
+        <ul class="pagination-list">
+         <li class="pagination-item"><a>1</a></li>
+         <li class="pagination-item"><a href="#">2</a></li>
+         <li class="pagination-item"><a href="#">3</a></li>
+       </ul> <!-- Пагинацию можно было не добавлять, но поскольку было в скринкасте я добавил-->
+    </section>
+  </main>
+  <footer class="main-footer">
+    <a class="footer-logo">
+      <img src="#"  alt="Логотип DEVICE">
+    </a>
+    <ul class="footer-panel-user">
+     <li><a href="#">Валентин Петухов</a></li>
+     <li><a href="#">Выйти</a></li>
+    </ul>
+    <ul class="footer-panel">
+      <li><a href="#">Сравнить</a></li>
+      <li><a href="#">Корзина</a></li>
+    </ul>
+    <p class="adress">г. Москва, ул. Строителей, 15</p>
+    <ul class="footer-navigation">
+      <li><a href="#">Доставка</a></li>
+      <li><a href="#">Гарантия</a></li>
+      <li><a href="#">Контакты</a></li>
+    </ul>
+    <p class="telephone">Тел.: +7 (495) 495-95-95</p>
+    <ul>
+      <li><a class="social-button" href="#">Фейсбук</a></li>
+      <li><a class="social-button" href="#">Инстаграм</a></li>
+      <li><a class="social-button" href="#">Твиттер</a></li>
+    </ul>
+    <a class="footer-logo-html" href="#">
+      <img src="#"  alt="Логотип HTMLAcademy">
+    </a>
+  </footer>
+</body>
+</html>
