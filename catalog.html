@@ -52,7 +52,7 @@
     <section class="filters">
       <h2 class="visually-hidden">Фильтр товаров</h2><!--Позже скрыть-->
       <!-- Здесь будет форма, сделал боковые фильтры, пока без ползунка -->
-      <form class="filter-side" method="get" action="#">
+      <form class="filter-side" method="get" action="https://echo.htmlacademy.ru">
         <fieldset>
           <legend>Цвет</legend>
           <ul class="filter-colors">
@@ -93,13 +93,13 @@
           <ul class="filter-bluetooth">
             <li>
               <label>
-                <input type="radio" name="bluetooth" value="bluetooth-yes" checked>
+                <input type="radio" name="bluetooth" value="yes" checked>
                 <span>Есть</span>
               </label>
             </li>
             <li>
               <label>
-                <input type="radio" name="bluetooth" value="bluetooth-no">
+                <input type="radio" name="bluetooth" value="no">
                 <span>Нет</span>
               </label>
             </li>
@@ -115,7 +115,9 @@
           <p class="catalog-item-image">
             <img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
           </p>
-          <h3>Любительская селфи-палка</h3> <!--Убрал ссылки на заголовок и картинку т.к. по макету они ссылками не являются и так далее вниз-->
+          <a href="#">
+            <h3>Любительская селфи-палка</h3>
+          </a> <!--Вернул ссылку)))-->
           <p class="catalog-item-price">500 руб.</p>
           <ul class="item-hover">
             <li><button class="item-hover-basket" type="button">В корзину</button></li>
@@ -126,7 +128,9 @@
           <p class="catalog-item-image">
             <img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
           </p>
-          <h3>Профессиональная селфи-палка</h3>
+          <a href="#">
+            <h3>Профессиональная селфи-палка</h3>
+          </a>
           <p class="catalog-item-price">1 500 руб.</p>
           <ul class="item-hover">
             <li><button class="item-hover-basket" type="button">В корзину</button></li>
@@ -137,7 +141,9 @@
           <p class="catalog-item-image">
             <img src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
           </p>
-          <h3>Непотопляемая селфи-палка</h3>
+          <a href="#">
+            <h3>Непотопляемая селфи-палка</h3>
+          </a>
           <p class="catalog-item-price">2 500 руб.</p>
           <ul class="item-hover">
             <li><button class="item-hover-basket" type="button">В корзину</button></li>
@@ -148,7 +154,9 @@
           <p class="catalog-item-image">
             <img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
           </p>
-          <h3>Селфи-палка «Следуй за мной»</h3>
+          <a href="#">
+            <h3>Селфи-палка «Следуй за мной»</h3>
+          </a>
           <p class="catalog-item-price">4 900 руб.</p>
           <ul class="item-hover">
             <li><button class="item-hover-basket" type="button">В корзину</button></li>
@@ -185,7 +193,7 @@
     </ul>
     <a class="telephone" href="tel:+74954959595" aria-label="Наш номер телефона +74954959595">Тел.: +7 (495) 495-95-95</a>
     <ul>
-      <li><a class="social-button" href="#">Фейсбук</a></li> <!--Когда вставим картинки добавить aria-label-->
+      <li><a class="social-button" href="#">Фейсбук</a></li> 
       <li><a class="social-button" href="#">Инстаграм</a></li>
       <li><a class="social-button" href="#">Твиттер</a></li>
     </ul>
