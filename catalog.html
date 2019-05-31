@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
   <header class="main-header">
@@ -54,7 +56,7 @@
       <!-- Здесь будет форма, сделал боковые фильтры, пока без ползунка -->
       <form class="filter-side" method="get" action="https://echo.htmlacademy.ru">
         <fieldset>
-          <legend>Цвет</legend>
+          <legend class="colors">Цвет</legend>
           <ul class="filter-colors">
             <li>
               <label>
@@ -89,7 +91,7 @@
           </ul>
         </fieldset>
         <fieldset>
-          <legend>Bluetooth</legend>
+          <legend class="Bluetooth">Bluetooth</legend>
           <ul class="filter-bluetooth">
             <li>
               <label>
@@ -115,9 +117,7 @@
           <p class="catalog-item-image">
             <img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
           </p>
-          <a href="#">
-            <h3>Любительская селфи-палка</h3>
-          </a> <!--Вернул ссылку)))-->
+          <h3><a href="#">Любительская селфи-палка</a></h3><!--Вернул ссылку)))-->
           <p class="catalog-item-price">500 руб.</p>
           <ul class="item-hover">
             <li><button class="item-hover-basket" type="button">В корзину</button></li>
@@ -128,9 +128,7 @@
           <p class="catalog-item-image">
             <img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
           </p>
-          <a href="#">
-            <h3>Профессиональная селфи-палка</h3>
-          </a>
+          <h3><a href="#">Профессиональная селфи-палка</a></h3>
           <p class="catalog-item-price">1 500 руб.</p>
           <ul class="item-hover">
             <li><button class="item-hover-basket" type="button">В корзину</button></li>
@@ -141,9 +139,7 @@
           <p class="catalog-item-image">
             <img src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
           </p>
-          <a href="#">
-            <h3>Непотопляемая селфи-палка</h3>
-          </a>
+          <h3><a href="#">Непотопляемая селфи-палка</a></h3>
           <p class="catalog-item-price">2 500 руб.</p>
           <ul class="item-hover">
             <li><button class="item-hover-basket" type="button">В корзину</button></li>
@@ -154,9 +150,7 @@
           <p class="catalog-item-image">
             <img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
           </p>
-          <a href="#">
-            <h3>Селфи-палка «Следуй за мной»</h3>
-          </a>
+          <h3><a href="#">Селфи-палка «Следуй за мной»</a></h3>
           <p class="catalog-item-price">4 900 руб.</p>
           <ul class="item-hover">
             <li><button class="item-hover-basket" type="button">В корзину</button></li>
