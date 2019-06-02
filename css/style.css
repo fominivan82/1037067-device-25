@@ -1,7 +1,75 @@
-
-
-
-
+@font-face {
+    font-family: 'Gilroy';
+    src: local('Gilroy Light'), local('Gilroy-Light'), url('../fonts/gilroylight.woff2') format('woff2'), url('../fonts/gilroylight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gilroy';
+    src: local('Gilroy ExtraBold'), local('Gilroy-ExtraBold'), url('../fonts/gilroyextrabold.woff2') format('woff2'), url('../fonts/gilroyextrabold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: local('Open Sans Light'), local('OpenSans-Light'), url('../fonts/opensanslight.woff2') format('woff2'), url('../fonts/opensanslight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: local('Open Sans Light Italic'), local('OpenSansLight-Italic'), url('../fonts/opensanslightitalic.woff2') format('woff2'), url('../fonts/opensanslightitalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: local('Open Sans'), local('OpenSans'), url('../fonts/opensans.woff2') format('woff2'), url('../fonts/opensans.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: local('Open Sans Italic'), local('OpenSans-Italic'), url('../fonts/opensansitalic.woff2') format('woff2'), url('../fonts/opensansitalic.woff') format('woff');
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url('../fonts/opensanssemibold.woff2') format('woff2'), url('../fonts/opensanssemibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: local('Open Sans Semibold Italic'), local('OpenSans-SemiboldItalic'), url('../fonts/opensanssemibolditalic.woff2') format('woff2'), url('../fonts/opensanssemibolditalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: local('Open Sans Bold'), local('OpenSans-Bold'), url('../fonts/opensansbold.woff2') format('woff2'), url('../fonts/opensansbold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: local('Open Sans Bold Italic'), local('OpenSans-BoldItalic'), url('../fonts/opensansbolditalic.woff2') format('woff2'), url('../fonts/opensansbolditalic.woff') format('woff');
+    font-weight: 700;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: local('Open Sans Extrabold'), local('OpenSans-Extrabold'), url('../fonts/opensansextrabold.woff2') format('woff2'), url('../fonts/opensansextrabold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: local('Open Sans Extrabold Italic'), local('OpenSans-ExtraboldItalic'), url('../fonts/opensansextrabolditalic.woff2') format('woff2'), url('../fonts/opensansextrabolditalic.woff') format('woff');
+    font-weight: 800;
+    font-style: italic;
+}
 body {
     margin: 0;
     padding: 0;
@@ -16,40 +84,23 @@ body {
     background-color: #ffffff;
     background-repeat: no-repeat;
 }
+body li {
+    list-style: none;
+} /*Честно я бы вообще бы оставил просто li, но по критерию наверное не пройдет)*/
 a {
     text-decoration: none;
-}
-.main-navigation,
-.site-panel,
-.submenu-cameras,
-.submenu-watch,
-.submenu-quadcopters,
-.site-navigation,
-.transport-company,
-.footer-panel,
-.footer-navigation,
-.site-panel-user,
-.breadcrumbs,
-.filter-colors,
-.filter-bluetooth,
-.catalog-list,
-.item-hover,
-.pagination-list,
-.footer-panel-user {
-    list-style: none;
 }
 .site-navigation a,
 .button,
 .footer-navigation,
-.user-about-us-button,
-.item-hover-basket,
+.feedback-button,
+.item-button-basket,
 .filter-button,
 .pagination-item {
     text-transform: uppercase;
-}
+} /*Этот список так оставляю, я не знаю как лучше его сделать)*/
 .main-header {
     background-color: #f7e296;
-    list-style: none;
 }
 .main-navigation a {
     font-family: "Gilroy", Arial, sans-serif;
@@ -71,22 +122,22 @@ a {
 .site-navigation a:focus,
 .site-panel a:hover,
 .site-panel a:focus {
-    opacity: .6;
+    opacity: 0.6;
 }
 .site-navigation a:active,
 .site-panel a:active {
-    opacity: .3;
+    opacity: 0.3;
 }
 .site-panel-user li:nth-last-child(1),
 .site-panel input {
-    opacity: .3;
+    opacity: 0.3;
     background-color: #f7e296;
     color: #000000;
     border: 0px;
 }
 .site-panel input:hover,
 .site-panel input:focus {
-    opacity: .6;
+    opacity: 0.6;
 }
 .submenu-cameras a,
 .submenu-watch a,
@@ -97,6 +148,7 @@ a {
     font-weight: 300;
     color: #000000;
     text-transform: none;
+    list-style: none;
 }
 .about-us h2 {
     font-family: "Gilroy", Arial, sans-serif;
@@ -113,6 +165,7 @@ a {
     font-weight: 800;
     color: #000000;
     text-transform: none;
+    list-style: none;
 }
 a.button {
     font-family: "Gilroy", Arial, sans-serif;
@@ -140,6 +193,7 @@ a.button {
     line-height: 24px;
     letter-spacing: 0.14px;
     color: rgba(0, 0, 0, 0.3);
+    list-style: none;
 }
 .breadcrumbs a:hover,
 .breadcrumbs a:focus {
@@ -148,7 +202,7 @@ a.button {
 .breadcrumbs a:active {
     opacity: 0.1; 
 }
-.Bluetooth,
+.bluetooth,
 .colors {
     font-family: "Gilroy", Arial, sans-serif;
     font-size: 18px;
@@ -156,6 +210,7 @@ a.button {
     line-height: 24px;
     letter-spacing: 0.2px;
     color: #000000;
+    list-style: none;
 }
 .filter-colors span, 
 .filter-bluetooth span {
@@ -165,8 +220,9 @@ a.button {
     line-height: 40px;
     letter-spacing: 0.14px;
     color: #000000;
+    list-style: none;
 }
-button.filter-button {
+.filter-button {
     font-family: "Gilroy", Arial, sans-serif;
     font-size: 18px;
     font-weight: 800;
@@ -181,6 +237,7 @@ button.filter-button {
     letter-spacing: 0.2px;
     text-align: left;
     color: #000000;
+    list-style: none;
 }
 .catalog-item-price {
     font-family: "Gilroy", Arial, sans-serif;
@@ -190,7 +247,7 @@ button.filter-button {
     letter-spacing: 0.2px;
     color: #464646;
 }
-.item-hover-basket {
+.item-button-basket {
     font-family: "Gilroy", Arial, sans-serif;
     font-size: 18px;
     font-weight: 800;
@@ -198,7 +255,7 @@ button.filter-button {
     letter-spacing: 3.6px;
     color: #000000;
 }
-.item-hover-contrast {
+.item-button-contrast {
     opacity: 0.5;
     font-family: "Open Sans", Arial, sans-serif;
     font-size: 13px;
@@ -207,8 +264,9 @@ button.filter-button {
     letter-spacing: 0.1px;
     color: rgba(0, 0, 0, 0.5);
 }
-.pagination-list li:nth-last-child(1) a,
-.pagination-list li:nth-child(1) a {
+li.pagination-item:nth-last-child(1) a,
+li.pagination-item:nth-child(1) a,
+li.pagination-item:nth-child(2) a {
     font-family: "Gilroy", Arial, sans-serif;
     font-size: 16px;
     font-weight: 800;
@@ -216,16 +274,8 @@ button.filter-button {
     letter-spacing: 3.2px;
     color: #000000;
 }
-.pagination-list li:nth-child(2) a {
-    font-family: "Gilroy", Arial, sans-serif;
-    font-size: 16px;
-    font-weight: 800;
-    line-height: 24px;
-    letter-spacing: 3.2px;
-    color: #000000;
-}
-.pagination-list li:nth-child(3) a,
-.pagination-list li:nth-child(4) a {
+li.pagination-item:nth-child(3) a,
+li.pagination-item:nth-child(4) a {
     opacity: 0.3;
     font-family: "Gilroy", Arial, sans-serif;
     font-size: 16px;
@@ -234,8 +284,6 @@ button.filter-button {
     letter-spacing: 3.2px;
     color: rgba(0, 0, 0, 0.3);
 }
-
-
 .main-footer {
     background-color: #464646;
 }
@@ -248,9 +296,10 @@ button.filter-button {
     line-height: 2.4;
     letter-spacing: 0.2px;
     color: rgba(255, 255, 255, 0.7);
+    list-style: none;
 }  
 .footer-panel-user li:nth-child(2) {
-    opacity: .3;
+    opacity: 0.3;
     color: rgba(255, 255, 255, 0.3);
 }
 .footer-navigation a {
@@ -260,6 +309,7 @@ button.filter-button {
     line-height: 1.33;
     letter-spacing: 3.6px;
     color: #ffffff;
+    list-style: none;
 }
 .footer-panel a:hover,
 .footer-panel a:focus {
@@ -284,15 +334,18 @@ a.telephone {
     line-height: 30px;
     color: #ffffff;
 }
-.user-about-us span {
+.social-button {
+    list-style: none;
+}
+.feedback span {
     font-family: "Gilroy", Arial, sans-serif;
     font-size: 18px;
     font-weight: 800;
     line-height: 1.33;
     color: #000000;
 }
-.user-about-us textarea,
-.user-about-us input {
+.feedback textarea,
+.feedback input {
     opacity: 0.4;
     font-family: "Open Sans", Arial, sans-serif;
     font-size: 14px;
@@ -300,7 +353,7 @@ a.telephone {
     color: rgba(70, 70, 70, 0.4);
     background-color: #f2f2f2;
 }
-.user-about-us-button {
+.feedback-button {
     font-family: "Gilroy", Arial, sans-serif;
     font-size: 18px;
     font-weight: 800;
@@ -308,83 +361,9 @@ a.telephone {
     letter-spacing: 3.6px;
     color: #000000;
 }
-.user-about-us textarea:hover,
-.user-about-us input:hover,
-.user-about-us textarea:focus,
-.user-about-us input:focus {
+.feedback textarea:hover,
+.feedback input:hover,
+.feedback textarea:focus,
+.feedback input:focus {
     background-color: #ebebeb;
-}
-
-
-@font-face {
-    font-family: 'Gilroy';
-    src: local('Gilroy Light'), local('Gilroy-Light'), url('../fonts/Gilroylight.woff2') format('woff2'), url('../fonts/Gilroylight.woff') format('woff'), url('../fonts/Gilroylight.ttf') format('truetype');
-    font-weight: 300;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Gilroy';
-    src: local('Gilroy ExtraBold'), local('Gilroy-ExtraBold'), url('../fonts/Gilroyextrabold.woff2') format('woff2'), url('../fonts/Gilroyextrabold.woff') format('woff'), url('../fonts/Gilroyextrabold.ttf') format('truetype');
-    font-weight: 800;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Open Sans';
-    src: local('Open Sans Light'), local('OpenSans-Light'), url('../fonts/opensanslight.woff2') format('woff2'), url('../fonts/opensanslight.woff') format('woff'), url('../fonts/opensanslight.ttf') format('truetype');
-    font-weight: 300;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Open Sans';
-    src: local('Open Sans Light Italic'), local('OpenSansLight-Italic'), url('../fonts/opensanslightitalic.woff2') format('woff2'), url('../fonts/opensanslightitalic.woff') format('woff'), url('../fonts/opensanslightitalic.ttf') format('truetype');
-    font-weight: 300;
-    font-style: italic;
-}
-@font-face {
-    font-family: 'Open Sans';
-    src: local('Open Sans'), local('OpenSans'), url('../fonts/opensans.woff2') format('woff2'), url('../fonts/opensans.woff') format('woff'), url('../fonts/opensans.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Open Sans';
-    src: local('Open Sans Italic'), local('OpenSans-Italic'), url('../fonts/opensansitalic.woff2') format('woff2'), url('../fonts/opensansitalic.woff') format('woff'), url('../fonts/opensansitalic.ttf') format('truetype');
-    font-weight: 400;
-    font-style: italic;
-}
-@font-face {
-    font-family: 'Open Sans';
-    src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url('../fonts/opensanssemibold.woff2') format('woff2'), url('../fonts/opensanssemibold.woff') format('woff'), url('../fonts/opensanssemibold.ttf') format('truetype');
-    font-weight: 600;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Open Sans';
-    src: local('Open Sans Semibold Italic'), local('OpenSans-SemiboldItalic'), url('../fonts/opensanssemibolditalic.woff2') format('woff2'), url('../fonts/opensanssemibolditalic.woff') format('woff'), url('../fonts/opensanssemibolditalic.ttf') format('truetype');
-    font-weight: 600;
-    font-style: italic;
-}
-@font-face {
-    font-family: 'Open Sans';
-    src: local('Open Sans Bold'), local('OpenSans-Bold'), url('../fonts/opensansbold.woff2') format('woff2'), url('../fonts/opensansbold.woff') format('woff'), url('../fonts/opensansbold.ttf') format('truetype');
-    font-weight: 700;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Open Sans';
-    src: local('Open Sans Bold Italic'), local('OpenSans-BoldItalic'), url('../fonts/opensansbolditalic.woff2') format('woff2'), url('../fonts/opensansbolditalic.woff') format('woff'), url('../fonts/opensansbolditalic.ttf') format('truetype');
-    font-weight: 700;
-    font-style: italic;
-}
-@font-face {
-    font-family: 'Open Sans';
-    src: local('Open Sans Extrabold'), local('OpenSans-Extrabold'), url('../fonts/opensansextrabold.woff2') format('woff2'), url('../fonts/opensansextrabold.woff') format('woff'), url('../fonts/opensansextrabold.ttf') format('truetype');
-    font-weight: 800;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Open Sans';
-    src: local('Open Sans Extrabold Italic'), local('OpenSans-ExtraboldItalic'), url('../fonts/opensansextrabolditalic.woff2') format('woff2'), url('../fonts/opensansextrabolditalic.woff') format('woff'), url('../fonts/opensansextrabolditalic.ttf') format('truetype');
-    font-weight: 800;
-    font-style: italic;
 }
