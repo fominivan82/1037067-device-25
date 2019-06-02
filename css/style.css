@@ -167,7 +167,7 @@ a {
     text-transform: none;
     list-style: none;
 }
-a.button {
+.button {
     font-family: "Gilroy", Arial, sans-serif;
     font-size: 18px;
     font-weight: 800;
@@ -264,9 +264,9 @@ a.button {
     letter-spacing: 0.1px;
     color: rgba(0, 0, 0, 0.5);
 }
-li.pagination-item:nth-last-child(1) a,
-li.pagination-item:nth-child(1) a,
-li.pagination-item:nth-child(2) a {
+.pagination-item:nth-last-child(1) a,
+.pagination-item:nth-child(1) a,
+.pagination-item:nth-child(2) a {
     font-family: "Gilroy", Arial, sans-serif;
     font-size: 16px;
     font-weight: 800;
@@ -274,8 +274,8 @@ li.pagination-item:nth-child(2) a {
     letter-spacing: 3.2px;
     color: #000000;
 }
-li.pagination-item:nth-child(3) a,
-li.pagination-item:nth-child(4) a {
+.pagination-item:nth-child(3) a,
+.pagination-item:nth-child(4) a {
     opacity: 0.3;
     font-family: "Gilroy", Arial, sans-serif;
     font-size: 16px;
@@ -326,8 +326,8 @@ li.pagination-item:nth-child(4) a {
 .footer-navigation a:active {
     opacity: 0.3;
 }
-p.adress,
-a.telephone {
+.adress,
+.telephone {
     font-family: "Open Sans", Arial, sans-serif;
     font-size: 15px;
     font-weight: 300;
