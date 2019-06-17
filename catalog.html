@@ -7,9 +7,9 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-  <header class="main-header">
+  <header class="main-header center">
       <div class="container-logo">
-        <a class="header-logo">
+        <a class="header-logo" href="index.html">
           <img src="img/logo.svg" width="163" height="35" alt="Логотип DEVICE">
         </a>
       </div>
@@ -52,19 +52,25 @@
     </nav>
   </header>
   <main class="goods">
-    <h1 class="page-title">Моноподы для селфи</h1>
-    <ul class="breadcrumbs">
-      <li><a href="index.html">Главная</a></li>
-      <li><a href="catalog.html">Магазин</a></li>
-      <li class="breadcrumbs-current">Моноподы для селфи</li>
-    </ul>
+    <div class="title-menu center">
+      <h1 class="page-title">Моноподы для селфи</h1>
+      <ul class="breadcrumbs">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="catalog.html">Магазин</a></li>
+        <li class="breadcrumbs-current">Моноподы для селфи</li>
+      </ul>
+    </div>
     <div class="cotalog-page">
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2><!--Позже скрыть-->
-        <div class="filters-title">Фильтр</div>
-        <div class="filters-cost">Стоимость</div>
+        <div class="filters-title">
+          <div class="title-filling center-left">Фильтр</div>
+        </div>
+        <div class="filters-cost">
+          <div class="cost-filling center-left">Стоимость</div>
+        </div>
         <!-- Здесь будет форма, сделал боковые фильтры, пока без ползунка, дивы просто обазначить коробочки -->
-        <form class="filter-side" method="get" action="https://echo.htmlacademy.ru">
+        <form class="filter-side center-left" method="get" action="https://echo.htmlacademy.ru">
           <fieldset>
             <legend class="colors">Цвет</legend>
             <ul class="filter-colors">
@@ -123,52 +129,54 @@
       <section class="catalog">
         <h2 class="visually-hidden">Список моноподов для селфи</h2><!--Позже скрыть-->
         <div class="sort">Сортировка</div>
-        <ul class="catalog-list">
-          <li class="catalog-item">
-            <p class="catalog-item-image">
-              <img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
-            </p>
-            <h3><a href="#">Любительская селфи-палка</a></h3><!--Вернул ссылку)))-->
-            <p class="catalog-item-price">500 руб.</p>
-            <ul class="item-button">
-              <li><button class="item-button-basket" type="button">В корзину</button></li>
-              <li><button class="item-button-contrast" type="button">Добавить к сравнению</button></li>
-            </ul><!--Всплывающее окно товара-->
-          </li>
-          <li class="catalog-item">
-            <p class="catalog-item-image">
-              <img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
-            </p>
-            <h3><a href="#">Профессиональная селфи-палка</a></h3>
-            <p class="catalog-item-price">1 500 руб.</p>
-            <ul class="item-button">
-              <li><button class="item-button-basket" type="button">В корзину</button></li>
-              <li><button class="item-button-contrast" type="button">Добавить к сравнению</button></li>
-            </ul><!--Всплывающее окно товара-->
-          </li>
-          <li class="catalog-item">
-            <p class="catalog-item-image">
-              <img src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
-            </p>
-            <h3><a href="#">Непотопляемая селфи-палка</a></h3>
-            <p class="catalog-item-price">2 500 руб.</p>
-            <ul class="item-button">
-              <li><button class="item-button-basket" type="button">В корзину</button></li>
-              <li><button class="item-button-contrast" type="button">Добавить к сравнению</button></li>
-            </ul><!--Всплывающее окно товара-->
-          </li>
-          <li class="catalog-item">
-            <p class="catalog-item-image">
-              <img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
-            </p>
-            <h3><a href="#">Селфи-палка «Следуй за мной»</a></h3>
-            <p class="catalog-item-price">4 900 руб.</p>
-            <ul class="item-button">
-              <li><button class="item-button-basket" type="button">В корзину</button></li>
-              <li><button class="item-button-contrast" type="button">Добавить к сравнению</button></li>
-            </ul><!--Всплывающее окно товара-->
-          </li>
-        </ul>
+        <div class="item-list">
+          <ul class="catalog-list">
+            <li class="catalog-item">
+              <p class="catalog-item-image">
+                <img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
+              </p>
+              <h3><a href="#">Любительская селфи-палка</a></h3><!--Вернул ссылку)))-->
+              <p class="catalog-item-price">500 руб.</p>
+              <ul class="item-button">
+                <li><button class="item-button-basket" type="button">В корзину</button></li>
+                <li><button class="item-button-contrast" type="button">Добавить к сравнению</button></li>
+              </ul><!--Всплывающее окно товара-->
+            </li>
+            <li class="catalog-item">
+              <p class="catalog-item-image">
+                <img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
+              </p>
+              <h3><a href="#">Профессиональная селфи-палка</a></h3>
+              <p class="catalog-item-price">1 500 руб.</p>
+              <ul class="item-button">
+                <li><button class="item-button-basket" type="button">В корзину</button></li>
+                <li><button class="item-button-contrast" type="button">Добавить к сравнению</button></li>
+              </ul><!--Всплывающее окно товара-->
+            </li>
+            <li class="catalog-item">
+              <p class="catalog-item-image">
+                <img src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
+              </p>
+              <h3><a href="#">Непотопляемая селфи-палка</a></h3>
+              <p class="catalog-item-price">2 500 руб.</p>
+              <ul class="item-button">
+                <li><button class="item-button-basket" type="button">В корзину</button></li>
+                <li><button class="item-button-contrast" type="button">Добавить к сравнению</button></li>
+              </ul><!--Всплывающее окно товара-->
+            </li>
+            <li class="catalog-item">
+              <p class="catalog-item-image">
+                <img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
+              </p>
+              <h3><a href="#">Селфи-палка «Следуй за мной»</a></h3>
+              <p class="catalog-item-price">4 900 руб.</p>
+              <ul class="item-button">
+                <li><button class="item-button-basket" type="button">В корзину</button></li>
+                <li><button class="item-button-contrast" type="button">Добавить к сравнению</button></li>
+              </ul><!--Всплывающее окно товара-->
+            </li>
+          </ul>
+        </div>
         <ul class="pagination-list">
           <li class="pagination-item"><a href="#">Назад</a></li>
           <li class="pagination-item"><a>1</a></li>
@@ -180,7 +188,7 @@
     </div>
   </main>
   <footer class="main-footer">
-    <div class="main-container">
+    <div class="main-container center">
       <a class="footer-logo" href="#">
         <img src="img/logo.svg" width="163" height="35" alt="Логотип DEVICE">
       </a>
@@ -193,7 +201,7 @@
         <li class="footer-basket"><a href="#">Корзина</a></li>
       </ul>
     </div>
-    <div class="footer-container">
+    <div class="footer-container center">
       <p class="adress">г. Москва, ул. Строителей, 15</p>
       <ul class="footer-navigation">
         <li><a href="#">Доставка</a></li>
@@ -202,7 +210,7 @@
       </ul>
       <a class="telephone" href="tel:+74954959595" aria-label="Наш номер телефона +74954959595">Тел.: +7 (495) 495-95-95</a>
     </div>
-    <div class="social-container">
+    <div class="social-container center">
       <ul class="social">
         <li><a class="social-button" href="#">Фейсбук</a></li> 
         <li><a class="social-button" href="#">Инстаграм</a></li>

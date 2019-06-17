@@ -73,7 +73,6 @@
 body {
     margin: 0;
     padding: 0;
-    width: 1440px;
   
     font-family: "Open Sans", Arial, sans-serif;
     font-size: 15px;
@@ -110,21 +109,27 @@ a {
     height: 1px;
     margin: -1px;
 }
+.center {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+.center-left {
+    width: 270px;
+    margin-left: auto;
+    padding-right: 70px;
+    box-sizing: border-box; 
+}
 .main-header {
-    background-color: #f7e296;
     display: flex;
     flex-direction: column;
-    width: 1160px;
-    margin-left: 140px;
-    margin-top: 21px;
-    padding: 0;
+    padding-top: 21px;
 }
 .container-logo {
     background: linear-gradient(to top, #f7e296 50%, #ffffff 50%);
-    width: 1160px;
-    margin: 0;
-    padding: 0; 
-    margin-bottom: 35px; 
 }
 .header-logo {
     margin: 0;
@@ -139,6 +144,7 @@ a {
     color: #000000;
 }
 .main-navigation{
+    background-color: #f7e296;
     margin: 0;
     padding: 0;
 }
@@ -146,10 +152,10 @@ a {
 .site-panel,
 .site-panel-user {
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
 }
 form.site-panel {
-    width: 160;
+    width: 160px;
     margin: 0;
     padding: 0;
     margin-left: 100px;
@@ -159,29 +165,29 @@ form.site-panel {
     width: 160;
     margin: 0;
     padding: 0;
-    margin-right: 20px;
+    margin-left: 400px;
 }
 .exit {
     width: 80;
     margin: 0;
     padding: 0;
-    margin-right: 20px;
+    margin-left: 20px;
 }
 .login {
     width: 100;
     margin: 0;
     padding: 0;
-    margin-right: 180px;
+    margin-left: 50px;
 }
 .compare {
     width: 100;
     margin: 0;
     padding: 0;
-    margin-right: 20px;
+    margin-left: 55px;
 }
 .basket {
     width: 100;
-    margin-left: auto;
+    margin-left: 35px;
     margin-right: 60px;
 }/*Эта строка еще не точно размечена т.к. будут иконки*/
 .site-panel-user a,
@@ -196,27 +202,25 @@ form.site-panel {
 .site-navigation {
     display: flex;
     flex-direction: row;
+    padding-top: 50px;
 }
 .product {
-    width: 220px;
-    margin-top: 50px;
+    width: 220px; 
     margin-left: 60px;
-    margin-right: 320px;
 }
 .shipping {
-    margin-top: 50px;
     width: 160px;
+    margin-left: 320px;
 }
 .guarantee {
-    margin-top: 50px;
     width: 140px;
-    margin-right: 80px;
+    margin-left: 30px;
 }
 .contacts {
-    margin-top: 50px;
     width: 120px;
-    margin-right: 60px;
     margin-left: auto;
+    margin-right: 60px;
+    text-align: right;
 }
 .product {
     display: flex;
@@ -227,6 +231,10 @@ form.site-panel {
     flex-direction: row;
     width: 600px;
     padding-bottom: 35px;
+    display: none;
+}
+.product:hover > .submenu {
+    display:inherit;
 }
 .submenu-cameras {
     margin-top: 25px;
@@ -279,7 +287,6 @@ form.site-panel {
     flex-direction: row;
     width: 1160px;
     justify-content: space-between;
-    margin-left: 140px;
 }
 .about-us {
     margin: 0;
@@ -313,6 +320,9 @@ form.site-panel {
     text-align: center;
     color: #000000;
 }
+.title-menu {
+    padding-left: 80px;
+}
 .page-title {
     font-family: "Gilroy", Arial, sans-serif;
     font-size: 47px;
@@ -320,15 +330,11 @@ form.site-panel {
     line-height: 48px;
     letter-spacing: 0.5px;
     color: #000000;
-    margin-left: 200px;
     margin-top: 45px;
 }
 .breadcrumbs {
     display: flex;
     flex-direction: row;
-    margin-left: 200px;
-    align-items: stretch;
-    align-content: center;
 }
 .breadcrumbs a,
 .breadcrumbs-current {
@@ -351,27 +357,30 @@ form.site-panel {
 .cotalog-page {
     display: flex;
     flex-direction: row;
-    width: 1440px;
     margin-top: 45px;
+    justify-content: center;    
 }
 .filters {
     display: flex;
     flex-direction: column;
-    width: 468px;
     background: #efefef;
+    flex: auto;
 }
 .filters-title {
+    background: #dbdbdb;
+    height: 70px;
+    padding-right: 70px;
+    padding-left: 60px;
+}
+.title-filling {
+    width: 200px;
     font-family: Gilroy;
     font-size: 16px;
     font-weight: 800;
     line-height: 1.5;
     letter-spacing: 3.2px;
-    text-align: left;
     color: #000000;
-    text-transform: uppercase;
-    padding-left: 200px;
-    background: #dbdbdb;
-    height: 70px;
+    text-transform: uppercase; 
 }
 .filters-cost {
     font-family: Gilroy;
@@ -381,17 +390,21 @@ form.site-panel {
     letter-spacing: 0.2px;
     text-align: left;
     color: #000000;
-    padding-left: 200px;
     height: 210px;
+    padding-right: 70px;
+    padding-left: 60px;
+}
+.cost-filling {
+    width: 200px;
 }
 .filter-side {
-    padding-left: 200px;
+    padding-right: 70px;
 }
 .catalog {
     display: flex;
     flex-direction: column;
-    width: 972px;
     margin-bottom: 77px;
+    flex: auto;
 }
 .sort {
     height: 70px;
@@ -407,11 +420,13 @@ form.site-panel {
     background: #ebebeb;
     margin-bottom: 71px;
 }
+.item-list {
+    width: 852px;
+}
 .catalog-list {
     display: flex;
     flex-wrap: wrap;
-    padding-left: 73px;
-    padding-right: 140px;
+    padding-left: 70px;
 }
 .catalog-item {
     margin: auto;
@@ -525,14 +540,10 @@ form.site-panel {
 }
 .main-footer {
     background-color: #464646;
-    width: 1440px;
 }
 .main-container {
     display: flex;
-    flex-direction: row;
-    width: 1160px;
     justify-content: space-between;
-    margin-left: 140px;
     margin-bottom: 35px;
     padding-top: 65px;
     align-items: center; 
@@ -542,20 +553,16 @@ form.site-panel {
     flex-direction: row;
     width: 440px;
     justify-content: space-between;
-    margin-left: 160px;
     align-items: center;
+    padding-left: 160px;
 }
 .footer-container {
     display: flex;
-    flex-direction: row;
-    width: 1160px;
-    margin-left: 140px;
     margin-bottom: 65px;
     align-items: center; 
 }
 .footer-panel {
     display: flex;
-    flex-direction: row;
     width: 360px;
 }
 .footer-basket {
@@ -564,7 +571,6 @@ form.site-panel {
 }
 .footer-panel-user {
     display: flex;
-    flex-direction: row;
 }
 .footer-exit {
     width: 45px;
@@ -594,12 +600,8 @@ form.site-panel {
 }
 .social-container {
     display: flex;
-    flex-direction: row;
-    width: 1160px;
-    margin-left: 140px;
     margin-top: 65px; 
-    padding-bottom: 65px;
-    align-items: center;  
+    padding-bottom: 65px; 
 }
 .social {
     display: flex;
