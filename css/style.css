@@ -693,3 +693,24 @@ form.site-panel {
 .feedback input:focus {
     background-color: #ebebeb;
 }
+.feedback {
+    display: none;
+    width: 960px;
+    height: 553px;
+    box-shadow: 0px 10px 20px 0 rgba(4, 6, 6, 0.2);
+}
+.feedback-popup {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.feedback-name,
+.feedback-mail {
+    min-width: 360px;
+    min-height: 75px;
+}
+.modal {
+    display: none;
+    width: 960px;
+    height: 559px;
+    box-shadow: 0px 10px 20px 0 rgba(4, 6, 6, 0.2);
+  }
