@@ -7,7 +7,7 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-  <header class="main-header center">
+  <header class="main-header wrapper">
     <div class="container-logo">
       <a class="header-logo">
         <img src="img/logo.svg" width="163" height="35" alt="Логотип DEVICE">
@@ -49,7 +49,7 @@
     </nav>
   </header>
   <!--Основную часть страницы сказано пока не размечать-->
-  <main class="container center">
+  <main class="container wrapper">
     <h1 class="visually-hidden">Магазин гаджетов DEVICE</h1><!--Позже скрыть-->
     <div class="about">
       <section class="about-us">
@@ -74,35 +74,37 @@
     </div>
   </main>
   <footer class="main-footer">
-    <div class="main-container center">
-      <a class="footer-logo">
-        <img src="img/logo.svg" width="163" height="35" alt="Логотип DEVICE">
-      </a>
-      <ul class="footer-panel">
-        <li class="footer-login"><a href="#">Войти</a></li>
-        <li class="footer-compare"><a href="#">Сравнить</a></li>
-        <li class="footer-basket"><a href="#">Корзина</a></li>
-      </ul>
-    </div>
-    <div class="footer-container center">
-      <p class="adress">г. Москва, ул. Строителей, 15</p>
-      <ul class="footer-navigation">
-        <li><a href="#">Доставка</a></li>
-        <li><a href="#">Гарантия</a></li>
-        <li><a href="#">Контакты</a></li>
-      </ul>
-      <a class="telephone" href="tel:+74954959595" aria-label="Наш номер телефона +74954959595">Тел.: +7 (495) 495-95-95</a>
-    </div>
-    <div class="social-container center">
-      <ul class="social">
-        <li><a class="social-button" href="#">Фейсбук</a></li> 
-        <li><a class="social-button" href="#">Инстаграм</a></li>
-        <li><a class="social-button" href="#">Твиттер</a></li>
-      </ul>
-      <a class="footer-logo-html" href="https://htmlacademy.ru/intensive/htmlcss">
-        <img src="img/logo-html.svg" width="27" height="35" alt="Логотип HTMLAcademy">
-      </a>
-    </div>
+    <div class="wrapper">
+      <div class="upper-footer">
+        <a class="footer-logo">
+          <img src="img/logo.svg" width="163" height="35" alt="Логотип DEVICE">
+        </a>
+        <ul class="footer-panel">
+          <li class="footer-login"><a href="#">Войти</a></li>
+          <li class="footer-compare"><a href="#">Сравнить</a></li>
+          <li class="footer-basket"><a href="#">Корзина</a></li>
+        </ul>
+      </div>
+      <div class="footer-container">
+        <p class="adress">г. Москва, ул. Строителей, 15</p>
+        <ul class="footer-navigation">
+          <li><a href="#">Доставка</a></li>
+          <li><a href="#">Гарантия</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+        <a class="telephone" href="tel:+74954959595" aria-label="Наш номер телефона +74954959595">Тел.: +7 (495) 495-95-95</a>
+      </div>
+      <div class="social-container">
+        <ul class="social">
+          <li><a class="social-button" href="#">Фейсбук</a></li> 
+          <li><a class="social-button" href="#">Инстаграм</a></li>
+          <li><a class="social-button" href="#">Твиттер</a></li>
+        </ul>
+        <a class="footer-logo-html" href="https://htmlacademy.ru/intensive/htmlcss">
+          <img src="img/logo-html.svg" width="27" height="35" alt="Логотип HTMLAcademy">
+        </a>
+      </div>
+    </div>  
   </footer>
   <!--Попытка сделать всплывающие окна -->
   <section class="feedback">
