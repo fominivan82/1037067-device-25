@@ -93,6 +93,10 @@ body ul {
 a {
     text-decoration: none;
 }
+img {
+    max-width: 100%;
+    height: auto;
+}
 .site-navigation a,
 .button,
 .footer-navigation,
@@ -130,12 +134,18 @@ a {
 }
 .container-logo {
     background: linear-gradient(to top, #f7e296 50%, #ffffff 50%);
+    position: relative;
 }
 .header-logo {
     margin: 0;
     padding: 0;
     padding-left: 60px;
 }
+.header-logo img {
+    position: absolute;
+    margin: 0;
+    bottom: 0;
+} /* Здесь не разобрался почему при bottom:0; все встает на место и вообще очень странное поведение*/
 .main-navigation a {
     font-family: "Gilroy", Arial, sans-serif;
     font-size: 18px;
@@ -146,107 +156,148 @@ a {
 .main-navigation{
     background-color: #f7e296;
     margin: 0;
+    padding-top: 27px;
+}
+.site-panel { 
+    margin: 0;
     padding: 0;
+    display: flex;
+    flex-wrap: wrap; 
+    position: relative;
+   
+}
+.site-panel img {
+    position: absolute;
+    left: 63px;
+    top: 8px;
 }
 .container-panel {
-    display: flex;
-    flex-wrap: wrap;
-}
-.site-panel {
-    display: flex;
-    margin-left: auto;
-}
-form.site-panel {
     width: 160px;
     margin: 0;
     padding: 0;
-    margin-left: 100px;
-    margin-right: auto;
+    padding-left: 97px;
 }
 .panel-user {
-    width: 160px;
+    width: 140px;
     margin: 0;
     padding: 0;
-    margin-left:100px;
+    margin-left:370px;
+    position: relative;
+}
+.panel-user img {
+    position: absolute;
+    left: -26px;
+    top: 9px;
 }
 .exit {
     width: 80px;
     margin: 0;
     padding: 0;
-    margin-left: 20px;
+    margin-left: 11px;
+    opacity: 0.3;
 }
 .login {
+    position: relative;
+    width: 230px;
+    margin: 0;
+    padding: 0;
+    margin-left: 370px;
+}
+.login img {
+    position: absolute;
+    left: -26px;
+    top: 9px;
+}
+.compare {
+    position: relative;
     width: 100px;
     margin: 0;
     padding: 0;
     margin-left: 50px;
 }
-.compare {
-    width: 100px;
-    margin: 0;
-    padding: 0;
-    margin-left: 55px;
+.compare img {
+    position: absolute;
+    left: -20px;
+    top: 11px;
 }
 .basket {
-    width: 100px;
-    margin-left: 35px;
-    margin-right: 60px;
-}/*Эта строка еще не точно размечена т.к. будут иконки*/
+    position: relative;
+    width: 80px;
+    margin-left: 13px;
+    text-align: right;
+}
+.basket img {
+    position: absolute;
+    left: -2px;
+    top: 9px;
+}
 .site-panel a {
     font-family: "Open Sans", Arial, sans-serif;
     font-size: 15px;
     line-height: 30px;
     font-weight: 300;
     color: #000000;
-    text-transform: none; 
+    text-transform: none;
+    letter-spacing: 0.15px; 
 }
 .site-navigation {
     display: flex;
-    padding-top: 50px;
+    flex-wrap: wrap;
+    padding-top: 39px;
 }
 .product {
     width: 220px; 
     margin-left: 60px;
+    position: relative;
+    line-height: 1.33;
+    letter-spacing: 3.6px;
+    display: flex;
+    flex-direction: column;
 }
+.product img {
+    position: absolute;
+    left: 230px;
+    top: 4px;
+    opacity: 0.3;
+} /* прозрачность плюса везде постоянная, стоит ли с этим заморачиваться и если стоит то как*/
 .shipping {
-    width: 160px;
+    width: 158px;
     margin-left: 320px;
+    line-height: 1.33;
+    letter-spacing: 3.6px;
 }
 .guarantee {
     width: 140px;
-    margin-left: 30px;
+    line-height: 1.33;
+    letter-spacing: 3.6px;
 }
 .contacts {
     width: 120px;
     margin-left: auto;
-    margin-right: 60px;
+    margin-right: 58px;
     text-align: right;
-}
-.product {
-    display: flex;
-    flex-direction: column;
+    line-height: 1.33;
+    letter-spacing: 3.6px;
 }
 .submenu {
     display: flex;
     width: 600px;
     padding-bottom: 35px;
-    display: none;
+    padding-top: 21px;
+   /* display: none;*/
 }
 .product:hover > .submenu {
     display:inherit;
 }
 .submenu-cameras {
-    margin-top: 25px;
     width: 200px;
     margin-right: 40px;
 }
 .submenu-watch {
-    margin-top: 25px;
     width: 160px;
     margin-right: 40px;
 }
 .submenu-quadcopters {
-    margin-top: 25px;
     width: 160px;
 }
 .site-navigation a:hover,
@@ -265,7 +316,7 @@ form.site-panel {
     background-color: #f7e296;
     color: #000000;
     border: 0;
-}
+} /* Разобраться со шрифтом в site-panel input*/
 .site-panel input:hover,
 .site-panel input:focus {
     opacity: 0.6;
@@ -280,6 +331,7 @@ form.site-panel {
     color: #000000;
     text-transform: none;
     list-style: none;
+    letter-spacing: normal;
 }
 .about {
     display: flex;
