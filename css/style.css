@@ -157,25 +157,26 @@ img {
     background-color: #f7e296;
     margin: 0;
     padding-top: 27px;
+    padding-left: 60px;
 }
 .site-panel { 
     margin: 0;
     padding: 0;
     display: flex;
     flex-wrap: wrap; 
-    position: relative;
-   
 }
-.site-panel img {
-    position: absolute;
-    left: 63px;
-    top: 8px;
-}
+
 .container-panel {
     width: 160px;
+    position: relative;
     margin: 0;
     padding: 0;
-    padding-left: 97px;
+    padding-left: 37px;
+}
+.container-panel img {
+    position: absolute;
+    left: 3px;
+    top: 8px;
 }
 .panel-user {
     width: 140px;
@@ -201,11 +202,12 @@ img {
     width: 230px;
     margin: 0;
     padding: 0;
-    margin-left: 370px;
+    margin-left: 340px;
+    padding-left: 30px;
 }
 .login img {
     position: absolute;
-    left: -26px;
+    left: 3px;
     top: 9px;
 }
 .compare {
@@ -246,23 +248,44 @@ img {
     padding-top: 39px;
 }
 .product {
-    width: 220px; 
-    margin-left: 60px;
+    width: 260px; 
     position: relative;
     line-height: 1.33;
     letter-spacing: 3.6px;
     display: flex;
     flex-direction: column;
+    margin-right:auto;
+    padding-bottom: 50px;
 }
-.product img {
+.submenu {
+    background-color:  #f7e296;
     position: absolute;
-    left: 230px;
-    top: 4px;
+    display: flex;
+    top: 45px;
+    left: -60px;
+    box-sizing: border-box;
+    width: 1160px;
+    padding-left: 60px;
+    padding-bottom: 35px;
+    display: none;
+    z-index: 2;
+}
+.product:hover > .submenu {
+    display:inherit;
+}
+.product span{
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 35px;
+    font-weight: 300;
+    color: #000000;
     opacity: 0.3;
-} /* прозрачность плюса везде постоянная, стоит ли с этим заморачиваться и если стоит то как*/
+    position: absolute;
+    top: -1px;
+    left: 230px;
+}
 .shipping {
     width: 158px;
-    margin-left: 320px;
+    margin-left: auto;
     line-height: 1.33;
     letter-spacing: 3.6px;
 }
@@ -273,29 +296,17 @@ img {
 }
 .contacts {
     width: 120px;
-    margin-left: auto;
+    margin-left: 84px;
     margin-right: 58px;
     text-align: right;
     line-height: 1.33;
     letter-spacing: 3.6px;
 }
-.submenu {
-    display: flex;
-    width: 600px;
-    padding-bottom: 35px;
-    padding-top: 21px;
-   /* display: none;*/
-}
-.product:hover > .submenu {
-    display:inherit;
-}
 .submenu-cameras {
-    width: 200px;
-    margin-right: 40px;
+    width: 240px;
 }
 .submenu-watch {
-    width: 160px;
-    margin-right: 40px;
+    width: 200px;
 }
 .submenu-quadcopters {
     width: 160px;
@@ -331,7 +342,7 @@ img {
     color: #000000;
     text-transform: none;
     list-style: none;
-    letter-spacing: normal;
+    letter-spacing: 0.15px;
 }
 .about {
     display: flex;
