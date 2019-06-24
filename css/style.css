@@ -133,19 +133,17 @@ img {
     padding-top: 21px;
 }
 .container-logo {
-    background: linear-gradient(to top, #f7e296 50%, #ffffff 50%);
-    position: relative;
+    background: linear-gradient(to top, #f7e296 24px, #ffffff 24px);
 }
 .header-logo {
     margin: 0;
     padding: 0;
     padding-left: 60px;
+    display: block;
 }
-.header-logo img {
-    position: absolute;
-    margin: 0;
-    bottom: 0;
-} /* Здесь не разобрался почему при bottom:0; все встает на место и вообще очень странное поведение*/
+.header-logo svg {
+    padding-top: 10px;
+} 
 .main-navigation a {
     font-family: "Gilroy", Arial, sans-serif;
     font-size: 18px;
@@ -156,7 +154,7 @@ img {
 .main-navigation{
     background-color: #f7e296;
     margin: 0;
-    padding-top: 27px;
+    padding-top: 18px;
     padding-left: 60px;
 }
 .site-panel { 
