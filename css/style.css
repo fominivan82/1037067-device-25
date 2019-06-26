@@ -133,7 +133,7 @@ img {
     padding-top: 21px;
 }
 .container-logo {
-    background: linear-gradient(to top, #f7e296 24px, #ffffff 24px);
+    background: linear-gradient(to top, #f7e296 27px, #ffffff 12px);
 }
 .header-logo {
     margin: 0;
@@ -154,7 +154,7 @@ img {
 .main-navigation{
     background-color: #f7e296;
     margin: 0;
-    padding-top: 18px;
+    padding-top: 16px;
     padding-left: 60px;
 }
 .site-panel { 
@@ -163,7 +163,6 @@ img {
     display: flex;
     flex-wrap: wrap; 
 }
-
 .container-panel {
     width: 160px;
     position: relative;
@@ -180,12 +179,13 @@ img {
     width: 140px;
     margin: 0;
     padding: 0;
-    margin-left:370px;
+    margin-left:340px;
+    padding-left: 30px;
     position: relative;
 }
 .panel-user img {
     position: absolute;
-    left: -26px;
+    left: 4px;
     top: 9px;
 }
 .exit {
@@ -211,24 +211,22 @@ img {
 .compare {
     position: relative;
     width: 100px;
-    margin: 0;
-    padding: 0;
-    margin-left: 50px;
+    padding-left: 50px;
 }
 .compare img {
     position: absolute;
-    left: -20px;
+    left: 30px;
     top: 11px;
 }
 .basket {
     position: relative;
-    width: 80px;
-    margin-left: 13px;
+    width: 63px;
+    padding-left: 31px;
     text-align: right;
 }
 .basket img {
     position: absolute;
-    left: -2px;
+    left: 10px;
     top: 9px;
 }
 .site-panel a {
@@ -342,24 +340,308 @@ img {
     list-style: none;
     letter-spacing: 0.15px;
 }
+.rectangle {
+    min-height: 115px;
+    background-color: #f7e296;
+    position: relative;
+}
+.rectangle::before {
+    content: "";
+    position: absolute;
+    left: 600px;
+    top: 40px;
+    width: 100px;
+    height: 7px;
+    background: #ffffff;
+}
+.presentation {
+    min-height: 480px;
+    background-color: #ffffff;
+}
+.icon-menu {
+    display: flex;
+    justify-content: space-between;
+    
+}
+.icon-menu div {
+    position: relative;
+    width: 160px;
+    height: 160px;
+    background: #f7e296;
+}
+.icon-menu h2 {
+    font-family: Gilroy, Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.33;
+    letter-spacing: 0.18px;
+    text-align: left;
+    color: #000000;
+    padding-top: 20px;
+}
+.virtuality svg {
+    position: absolute;
+    top: 52px;
+    left: 32px;
+}
+.virtuality:hover div,
+.virtuality a:focus div {
+    background: #f0c52e; 
+}
+.virtuality:active svg,
+.virtuality:active h2 {
+    opacity: 0.3; 
+}
+.monopods svg {
+    position: absolute;
+    top: 41px;
+    left: 39px;
+}
+.monopods:hover div,
+.monopods a:focus div {
+    background: #f0c52e; 
+}
+.monopods:active svg,
+.monopods:active h2 {
+    opacity: 0.3; 
+}
+.action svg {
+    position: absolute;
+    top: 38px;
+    left: 50px;
+}
+.action:hover div,
+.action a:focus div {
+    background: #f0c52e; 
+}
+.action:active svg,
+.action:active h2 {
+    opacity: 0.3; 
+}
+.fitness svg {
+    position: absolute;
+    top: 50px;
+    left: 29px;
+}
+.fitness:hover div,
+.fitness a:focus div {
+    background: #f0c52e; 
+}
+.fitness:active svg,
+.fitness:active h2 {
+    opacity: 0.3; 
+}
+.smart svg {
+    position: absolute;
+    top: 32px;
+    left: 57px;
+}
+.smart:hover div,
+.smart a:focus div {
+    background: #f0c52e; 
+}
+.smart:active svg,
+.smart:active h2 {
+    opacity: 0.3; 
+}
+.quadcopters svg {
+    position: absolute;
+    top: 50px;
+    left: 15px;
+}
+.quadcopters:hover div,
+.quadcopters a:focus div {
+    background: #f0c52e; 
+}
+.quadcopters:active svg,
+.quadcopters:active h2 {
+    opacity: 0.3; 
+}
+.amenities-backdrop {
+    width: 100%;
+    min-height: 453px;
+    background: linear-gradient(to top, #e5e5e5 63.5%, #ffffff 24%);
+}
+.amenities {
+    display: flex;
+    padding-top: 142px;
+}
+.amenities-menu {
+    width: 400px;
+    padding-right: 140px;
+}
+.shipment {
+    width: 700px;
+    padding-right: 300px;
+    position: relative;
+}
+.shipment svg {
+    position: absolute;
+    top: 10px;
+    left: 556px;
+}
+.amenities-menu button {
+    font-family: Gilroy, Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.33;
+    letter-spacing: 3.6px;
+    text-align: center;
+    color: #000000;
+}
+.shipment h2 {
+    font-family: Gilroy, Arial, sans-serif;
+    font-size: 47px;
+    font-weight: 800;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.02;
+    letter-spacing: 0.47px;
+    text-align: left;
+    color: #000000;
+    margin: 0;
+    padding-bottom: 17px;
+}
+.shipment p {
+    font-family: OpenSans, Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2;
+    letter-spacing: 0.15px;
+    text-align: left;
+    color: #464646;
+}
+.logotypes-panel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 285px;
+    padding-top: 3px;
+}
+.logotype1 div{
+    background: url("../img/logo-1.jpg") no-repeat; 
+    height: 100px; 
+    width: 260px; 
+}
+.logotype1:hover div,
+.logotype1 a:focus div {
+    background: url("../img/logo-1.jpg copy.jpg") no-repeat; 
+    height: 100px; 
+    width: 260px;   
+}
+.logotype2 div{
+    background: url("../img/logo-2.jpg") no-repeat; 
+    height: 100px; 
+    width: 260px; 
+}
+.logotype2:hover div,
+.logotype2 a:focus div {
+    background: url("../img/logo-2.jpg copy.jpg") no-repeat; 
+    height: 100px; 
+    width: 260px;   
+}
+.logotype3 div{
+    background: url("../img/logo-3.jpg") no-repeat; 
+    height: 100px; 
+    width: 260px; 
+}
+.logotype3:hover div,
+.logotype3 a:focus div {
+    background: url("../img/logo-3.jpg copy.jpg") no-repeat; 
+    height: 100px; 
+    width: 260px;   
+}
+.logotype4 div{
+    background: url("../img/logo-4.jpg") no-repeat; 
+    height: 100px; 
+    width: 260px; 
+}
+.logotype4:hover div,
+.logotype4 a:focus div {
+    background: url("../img/logo-4.jpg copy.jpg") no-repeat; 
+    height: 100px; 
+    width: 260px;   
+}
 .about {
     display: flex;
+    padding-bottom: 73px;
 }
 .about-us {
     margin: 0;
     padding: 0;
-    width: 50%;
-    margin-bottom: 95px;
+    position: relative;
+    width: 475px;
 }
-.about-us h2 {
+.about-us::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 80px;
+    height: 7px;
+    background: #000000;
+}
+.about-us p {
+    padding-top: 3px;
+    padding-bottom: 12px;
+}
+.exposure {
+    margin: 0;
+    padding: 0;
+    width: 560px;
+    padding-left: 124px;
+    position: relative;
+}
+.exposure::before {
+    content: "";
+    position: absolute;
+    left: 125px;
+    top: 0px;
+    width: 80px;
+    height: 7px;
+    background: #000000;
+}
+.exposure p {
+    padding-top: 4px;
+    padding-bottom: 23px;
+}
+.write {
+    width: 260px;
+    padding-top: 69px;
+    min-height: 40px; 
+}
+.write a {
+    display: block;
+    padding-left: 42px;
+    background: url("../img/Layer 7 copy 4.png") no-repeat; 
+    background-position: 0px 6px;
+}
+.write a:hover,
+.write a:focus {
+    background: url("../img/Layer 7 copy 11.png") no-repeat; 
+    background-position: 0px 0px; 
+}
+.about-us h2,
+.exposure h2 {
     font-family: "Gilroy", Arial, sans-serif;
     font-size: 47px;
     line-height: 48px;
     font-weight: 800;
     color: #000000;
     text-transform: none;
+    padding-top: 14px; 
 }
 .transport-company {
+    padding-left: 36px;
+    padding-top: 39px;
+}
+.transport-company li { 
     font-family: "Gilroy", Arial, sans-serif;
     font-size: 16px;
     line-height: 40px;
@@ -367,6 +649,35 @@ img {
     color: #000000;
     text-transform: none;
     list-style: none;
+    position: relative;
+}
+.transport-company li::before {
+    content: "";
+    position: absolute;
+    left: -33px;
+    top: 14px;
+    width: 8px;
+    height: 8px;
+    background-image: url("../img/slider-button.png");
+}
+.detailed {
+    width: 260px;
+    min-height: 40px;
+    padding-top: 63px;
+}
+.detailed a {
+    display: block;
+    padding-left: 23px;
+    background: url("../img/Layer 7 copy 4.png") no-repeat; 
+    background-position: 0px 6px;
+}
+.detailed a:hover,
+.detailed a:focus {
+    background: url("../img/Layer 7 copy 11.png") no-repeat; 
+    background-position: 0px 0px; 
+}
+.button:active span {
+    opacity: 0.3; 
 }
 .button {
     font-family: "Gilroy", Arial, sans-serif;
@@ -594,7 +905,7 @@ img {
 }
 .main-footer {
     background-color: #464646;
-    padding-top: 65px;
+    padding-top: 45px;
     padding-bottom: 65px;
 }
 .upper-footer {
@@ -617,11 +928,15 @@ img {
 }
 .footer-panel {
     display: flex;
-    width: 360px;
+    flex-wrap: wrap;
 }
 .footer-basket {
-    width: 80px;
+    width: 70px;
+    padding-left: 30px;
+    padding-top: 15px;
     margin-left: auto;
+    text-align: right;
+    text-align: top;
 }
 .footer-panel-user {
     display: flex;
@@ -635,9 +950,10 @@ img {
     margin-left: 520px;
 }
 .footer-compare {
-    width: 115px;
+    width: 100px;
+    padding-top: 15px;
+    padding-left: 40px;
     margin-left: auto;
-    margin-right: 20px;
 }
 .footer-login {
     width: 100px;
