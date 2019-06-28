@@ -9,15 +9,8 @@
   <body>
   <header class="main-header wrapper">
     <div class="container-logo">
-      <a class="header-logo">
-        <svg xmlns="http://www.w3.org/2000/svg" width="163" height="35" viewBox="0 0 163 35">
-          <defs>
-              <style>
-                  .cls-1{fill-rule:evenodd}
-              </style>
-          </defs>
-          <path id="_-e-logo" d="M-.151.702v33.6h13.532a15.72 15.72 0 0 0 11.72-4.824 16.458 16.458 0 0 0 4.712-11.976 16.458 16.458 0 0 0-4.712-11.976A15.723 15.723 0 0 0 13.381.702H-.151zM7.582 26.91V8.091h5.8a8.646 8.646 0 0 1 6.5 2.568 9.407 9.407 0 0 1 2.489 6.84 9.406 9.406 0 0 1-2.489 6.84 8.642 8.642 0 0 1-6.5 2.568h-5.8zm34.8-5.952h12.082v-7.3H42.378V8.091h13.291V.702H34.645v33.6H55.91V26.91H42.378v-5.952zm36.343 13.344L89.744.702h-8.458l-7.491 24.72L66.304.702h-8.457l11.019 33.6h9.859zm14.4 0h7.733V.702h-7.733v33.6zm38.615-1.416a15.506 15.506 0 0 0 6.041-5.688l-6.67-3.84a7.482 7.482 0 0 1-3.165 3.024 9.87 9.87 0 0 1-4.664 1.1 9.595 9.595 0 0 1-7.177-2.736 9.909 9.909 0 0 1-2.682-7.248 9.909 9.909 0 0 1 2.682-7.248 9.595 9.595 0 0 1 7.177-2.736 9.897 9.897 0 0 1 4.639 1.08 7.592 7.592 0 0 1 3.19 3.048l6.67-3.84a15.873 15.873 0 0 0-6.09-5.688 17.42 17.42 0 0 0-8.409-2.088c-9.779-.272-17.797 7.691-17.591 17.472-.208 9.781 7.809 17.747 17.588 17.476a17.52 17.52 0 0 0 8.458-2.088zm17.881-11.928h12.082v-7.3h-12.085V8.091h13.29V.702h-21.023v33.6h21.265V26.91h-13.532v-5.952z" class="cls-1" data-name="-e-logo"/>
-        </svg>
+      <a class="header-logo" href="index.html">
+        <img src="img/logo.png" width="163" height="35" alt="Логотип DEVICE">
       </a>
     </div>
     <nav class="main-navigation">
@@ -61,22 +54,32 @@
     <div class="title-menu wrapper">
       <h1 class="page-title">Моноподы для селфи</h1>
       <ul class="breadcrumbs">
-        <li><a href="index.html">Главная</a></li>
-        <li><a href="catalog.html">Магазин</a></li>
-        <li class="breadcrumbs-current">Моноподы для селфи</li>
+        <li class="breadcrumbs-first"><img src="img/nav-arrow.svg" width="4" height="7"><a href="index.html"><p>Главная</p></a></li>
+        <li class="breadcrumbs-second"><img src="img/nav-arrow.svg" width="4" height="7"><a href="catalog.html"><p>Каталог товаров</p></a></li>
+        <li class="breadcrumbs-current"><p>Моноподы для селфи</p></li>
       </ul>
     </div>
     <div class="cotalog-page">
       <section class="filters">
       <!--  <h2 class="visually-hidden">Фильтр товаров</h2> Убирать совсем неправильно, а если оставить, от в каком виде?-->
         <div class="filters-title">
-          <div class="title-filling wrapper-left">Фильтр</div>
+          <div class="title-filling">Фильтр:</div>
         </div>
         <div class="filters-cost">
-          <div class="cost-filling wrapper-left">Стоимость</div>
+          <div class="cost-filling">Стоимость</div>
+          <div class="range-controls">
+            <div class="scale">
+              <div class="bar"></div>
+            </div>
+            <div class="range-toggle range-toggle-min"></div>
+            <div class="range-toggle range-toggle-max"></div>
+          </div> 
+          <div class="price-controls">
+            <div class="min-price">от 0</div>
+            <div class="max-price">до 5000</div>
+          </div>
         </div>
-        <!-- Здесь будет форма, сделал боковые фильтры, пока без ползунка, дивы просто обазначить коробочки -->
-        <form class="filter-side wrapper-left" method="get" action="https://echo.htmlacademy.ru">
+        <form class="filter-side" method="get" action="https://echo.htmlacademy.ru">
           <fieldset>
             <legend class="colors">Цвет</legend>
             <ul class="filter-colors">
@@ -137,48 +140,56 @@
         <div class="sort">Сортировка</div>
         <div class="item-list">
           <ul class="catalog-list">
-            <li class="catalog-item">
+            <li class="amateur">
               <p class="catalog-item-image">
                 <img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
               </p>
-              <h3><a href="#">Любительская селфи-палка</a></h3><!--Вернул ссылку)))-->
-              <p class="catalog-item-price">500 руб.</p>
+              <div>
+                <h3><a href="#">Любительская селфи-палка</a></h3><!--Вернул ссылку)))-->
+                <p class="catalog-item-price">500 руб.</p>
+              </div>
               <ul class="item-button">
-                <li><button class="item-button-basket" type="button">В корзину</button></li>
-                <li><button class="item-button-contrast" type="button">Добавить к сравнению</button></li>
+                <li><button class="item-button-basket" type="button"><span>В корзину</span></button></li>
+                <li><button class="item-button-contrast" type="button"><span>Добавить к сравнению</span></button></li>
               </ul><!--Всплывающее окно товара-->
             </li>
-            <li class="catalog-item">
+            <li class="professional">
               <p class="catalog-item-image">
                 <img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
               </p>
-              <h3><a href="#">Профессиональная селфи-палка</a></h3>
-              <p class="catalog-item-price">1 500 руб.</p>
+              <div>
+                <h3><a href="#">Профессиональная <br> селфи-палка</a></h3>
+                <p class="catalog-item-price">1 500 руб.</p>
+              </div>
               <ul class="item-button">
-                <li><button class="item-button-basket" type="button">В корзину</button></li>
-                <li><button class="item-button-contrast" type="button">Добавить к сравнению</button></li>
+                <li><button class="item-button-basket" type="button"><span>В корзину</span></button></li>
+                <li><button class="item-button-contrast" type="button"><span>Добавить к сравнению</span></button></li>
               </ul><!--Всплывающее окно товара-->
             </li>
-            <li class="catalog-item">
+            <li class="unsinkable">
               <p class="catalog-item-image">
                 <img src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
               </p>
-              <h3><a href="#">Непотопляемая селфи-палка</a></h3>
-              <p class="catalog-item-price">2 500 руб.</p>
+              <div>
+                <h3><a href="#">Непотопляемая селфи-палка</a></h3>
+                <p class="catalog-item-price">2 500 руб.</p>
+              </div>
               <ul class="item-button">
-                <li><button class="item-button-basket" type="button">В корзину</button></li>
-                <li><button class="item-button-contrast" type="button">Добавить к сравнению</button></li>
+                <li><button class="item-button-basket" type="button"><span>В корзину</span></button></li>
+                <li><button class="item-button-contrast" type="button"><span>Добавить к сравнению</span></button></li>
               </ul><!--Всплывающее окно товара-->
             </li>
-            <li class="catalog-item">
+            <li class="follow">
               <p class="catalog-item-image">
                 <img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
               </p>
-              <h3><a href="#">Селфи-палка «Следуй за мной»</a></h3>
-              <p class="catalog-item-price">4 900 руб.</p>
+              <div>
+                <h3><a href="#">Селфи-палка «Следуй за мной»</a></h3>
+                <p class="catalog-item-price">4 900 руб.</p>
+              </div>
               <ul class="item-button">
-                <li><button class="item-button-basket" type="button">В корзину</button></li>
-                <li><button class="item-button-contrast" type="button">Добавить к сравнению</button></li>
+                <li><button class="item-button-basket" type="button"><span>В корзину</span></button></li>
+                <li><button class="item-button-contrast" type="button"><span>Добавить к сравнению</span></button></li>
               </ul><!--Всплывающее окно товара-->
             </li>
           </ul>
@@ -197,36 +208,74 @@
     <div class="wrapper">
       <div class="upper-footer">
         <a class="footer-logo" href="#">
-          <img src="img/logo.svg" width="163" height="35" alt="Логотип DEVICE">
+          <img src="img/logo-footer_.png" width="163" height="35" alt="Логотип DEVICE">
         </a>
-        <ul class="footer-panel-user"></ul>
-          <li class="footer-user"><a href="#">Валентин Петухов</a></li>
-          <li class="footer-exit"><a href="#">Выйти</a></li>
         <ul class="footer-panel">
-          <li class="footer-compare"><a href="#">Сравнить</a></li>
-          <li class="footer-basket"><a href="#">Корзина</a></li>
+          <li class="footer-user"><a href="#"><img src="img/user-footer_.png" width="13" height="12">Валентин Петухов</a></li>
+          <li class="footer-exit"><a href="#">Выйти</a></li>
+          <li class="footer-compare"><a href="#"><img src="img/compare-footer_.png" width="10" height="10">Сравнить</a></li>
+          <li class="footer-basket"><a href="#"><img src="img/cart-footer_.png" width="12" height="12">Корзина</a></li>
         </ul>
       </div>
       <div class="footer-container">
         <p class="adress">г. Москва, ул. Строителей, 15</p>
         <ul class="footer-navigation">
-          <li><a href="#">Доставка</a></li>
-          <li><a href="#">Гарантия</a></li>
-          <li><a href="#">Контакты</a></li>
+          <li class="footer-shipping"><a href="#">Доставка</a></li>
+          <li class="footer-guarantee"><a href="#">Гарантия</a></li>
+          <li class="footer-contacts"><a href="#">Контакты</a></li>
         </ul>
         <a class="telephone" href="tel:+74954959595" aria-label="Наш номер телефона +74954959595">Тел.: +7 (495) 495-95-95</a>
       </div>
       <div class="social-container">
         <ul class="social">
-          <li><a class="social-button" href="#">Фейсбук</a></li> 
-          <li><a class="social-button" href="#">Инстаграм</a></li>
-          <li><a class="social-button" href="#">Твиттер</a></li>
+          <li>
+            <a class="social-button" href="#"><span class="visually-hidden">Фейсбук</span>
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+                <defs>
+                  <style>
+                    .cls-1 {
+                      opacity: 0.3;
+                    }
+                  </style>
+                </defs>
+                <image id="ФБ" class="cls-1" width="32" height="32" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABzklEQVRYhc2XsUsDMRTGfy+2DpYWBJF2EqSTbkKhky6u/r/OToLg4OBUkILQDoLQ0g726pPUd0cqluaurecHgRAu7/vyknv5IkRCVfeBJnAE1IEDoGKzE2AKjIE3YCgiHzGR1wpQ1QbQBlqAi9T7CQyAnoiMCglQVb+6M+AkknQV+sCziCTRAlTVp7gD1DYkTzEBHkRkvFaAqh4C3WB/twWfgXsReQ/juR/k9R2RYzG7xpEhy4Dt+WXOtPv97QGzYOx6zQL8dtylZyLMwFlO8lcReRKRqYjM0ubXsmZezbjIBNivlve0v+T8PsSJcWapahcIMkk7qnoejO9FzvecjxWrcK0CAkKcFpjT8tzOymtshdsmFtwVq+2xSFYcsvAvqOaIdySqegU0Iifc2klfCVW9ySFg5OxWKwsHbkdVLxaVvOQXqvpp/UcRmfOd9k5hBXawYoUcB32fvbn1mwX5E2dOpixMndmosjB25uHKwpsXMDQP99fwnENn7nVQgoCB507vgF4JAhacCwFmnfs5A/ibtOpbAfJ+atc3tWRF8Lsls4EHK0y7QmL2PONY8gHm2+93JCK15Ut15/89TAIR5T3Nfggp53H6i5DtP8+BLxTjqlLyjeWHAAAAAElFTkSuQmCC"/>
+              </svg>
+            </a>
+          </li> 
+          <li>
+            <a class="social-button" href="#"><span class="visually-hidden">Инстаграм</span>
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+                <defs>
+                  <style>
+                    .cls-1 {
+                      opacity: 0.3;
+                    }
+                  </style>
+                </defs>
+                <image id="_" data-name="&apos;=]" class="cls-1" width="32" height="32" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACX0lEQVRYhc2X30sUURTHP2cZDCxNS8JFyChfKtJ6EOz/pxB8KIqkB4PMYPfBn5kWufWNI2dqdszrHXcX+8LAwMyc7/ece+73njEyIWkMmAVmgAlgHCji6x5wDBwC20DXzH7kRL5QgKRJYAFoA61Mvb+ADrBhZl8uJUCSZ/cQuJdJeh42gXUz62ULkOQlXgauD0he4ghYM7PDCwVImgZWKus7LHgFVs1srxqvVSOfGBE5EXMlOM4KiDVfHhF5VcRycPULiIYb1pqn4ByPqorKrXZet3sDvY493gQe82n4RR3zkj76Fi0rsJAI/MrMds3spOG1A7xJxD3lLMLh2okXv+ZkLelOJREX/B44SHzSdu4i7DXX4VK4BtyO5yelrsT7zjnbCm+/KswUcbA0hqRb3kyRpdvtbjSr41tmvIninC49A0m+fb6b2U9JXurnFSedA16Y2Vbs8bFMAeOtBsazFOtMZF61cY9ztwwKPM6MWQyj+epINd4ZtOKQyMVUvLdZI/Lz/1PcTzeI12vFJJOLB5IsTOYl8BnY8nsz25fk8e43iHdchMVONqjAE0lv3R2j808R5Euxq44y4x0WMcPNNVDtDTgl6QOwH804HZnnJlJi2wV0PasMN6zb6nxcJdz9duK+PLhSM6f3Tbfw6VVSJ1GFG8Cemb3LyqkfNxPPOs5desBGQsAzSZc9jhcTz53zb4kkLdZKOkpsmtnpUV1d9/UG3TsIjoKLPgExt681NKam6MV4/oejr/Njbl8dkYhyLO/rpf/vx6QioojpddDGbP5rVhNyNT+n/xAy/N9z4Df7Dd2kMZsz/QAAAABJRU5ErkJggg=="/>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="social-button" href="#"><span class="visually-hidden">Твиттер</span>
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+                <defs>
+                  <style>
+                    .cls-1 {
+                      opacity: 0.3;
+                    }
+                  </style>
+                </defs>
+                <image id="Твитер" class="cls-1" width="32" height="32" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACh0lEQVRYhc2X3WtTQRDFf3O9atomAbUPBj+qUlALviiBvin4l4sIhYIPCn0QRfJgG7DQ1jQVa3Bkytx6E+/e3TQJep5KM3fO2d3ZM7NCIlT1CnATWAVawDKQ+9cj4AQYAPtAX0ROUzJHBahqG1gHOkCWqPcXsAd8FJFvFxKgqra6x8C9RNIQesCOiIySBaiqbXEXWJmRvMAQ2BaRQVSAql4DNkvnOy/YDmyJyEE5XzZB3loQOZ5z0zn+FuBn3l0QeVlE17nGBXjBzevM62AcG2MC/KrNWu3TYM05z7d7fcaEVmAf/O6bB1ghPwKablCNCg8xzre5O1wnkNiuz3vgGXC5hvzNhOHsqao54pILelHxXce4M7fXkMMNROQr8Bo4CsRUup2I/PT/2wIPKr47487c20NoebKhi3gHHE/E7oY+VlXLfxu4HghZzQuSAFbMmMw8RETdVnuq2vRzbvgxhWANa61ugbkHhXBoRKp66AKK7T2u2IkqLEV+X84ixmPn97lMPiWakfA81l5tdzZUNXlumMCNWEDm16gOD4Anqhq6hpXwAqwrcMMoc6OI4YtdqylXf6fGOwqcZD5GxWA70Jhi9VY7DxNCB5nPcDHYVX2pqk/LnSxAnrlzXk3Iu2/J+rbCgBvaVfvhx2ROuBsarZy84eQh4ynDLLqf2/SqqtZEblUEmcBP5u11NaCq1mLvAveBSwnkeM5T4U87fl4TrF4r5u3ffZTL3QnbETML4ZX1irPztD9UtVdjm+JE7QsQVaFXNLDyue9EfH1eGDoXYwK8uLYTjGkWjHw8P+cYq3yf27cWJKIYy8d85/97mJRE5D691vXzFEz/NJsQ8m8epxVC5v88B34Dd6HpVXhsYFkAAAAASUVORK5CYII="/>
+              </svg>
+            </a>
+          </li>
         </ul>
         <a class="footer-logo-html" href="https://htmlacademy.ru/intensive/htmlcss">
-          <img src="img/logo-html.svg" width="27" height="35" alt="Логотип HTMLAcademy">
+          <img src="img/logo-html-footer_.png" width="27" height="35" alt="Логотип HTMLAcademy">
         </a>
       </div>
-    </div>
+    </div>  
   </footer>
 </body>
 </html>
