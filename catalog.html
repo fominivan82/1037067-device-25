@@ -19,6 +19,7 @@
           <form class="container-panel" method="get">
             <img src="img/search.svg" width="16" height="16">
             <input name="seek" placeholder="Поиск по сайту" type="search">
+            <button class="discover" type="submit"><span>Найти</span></button>
           </form> 
         </li>
         <li class="panel-user"><img src="img/user.svg" width="13" height="12"><a href="#">Валентин Петухов</a></li>
@@ -85,31 +86,31 @@
             <ul class="filter-colors">
               <li>
                 <label>
-                  <input type="checkbox" name="black" checked>
+                  <input class="visually-hidden filter-checkbox" type="checkbox" name="black" checked>
                   <span>Черный</span>
                 </label>
               </li>
               <li>
                 <label>
-                  <input type="checkbox" name="white">
+                  <input class="visually-hidden filter-checkbox" type="checkbox" name="white">
                   <span>Белый</span>
                 </label>
               </li>
               <li>
                 <label>
-                  <input type="checkbox" name="blue" checked>
+                  <input class="visually-hidden filter-checkbox" type="checkbox" name="blue" checked>
                   <span>Синий</span>
                 </label>
               </li>
               <li>
                 <label>
-                  <input type="checkbox" name="red" checked>
+                  <input class="visually-hidden filter-checkbox" type="checkbox" name="red" checked>
                   <span>Красный</span>
                 </label>
               </li>
               <li>
                 <label>
-                  <input type="checkbox" name="pink">
+                  <input class="visually-hidden filter-checkbox" type="checkbox" name="pink">
                   <span>Розовый</span>
                 </label>
               </li>
@@ -120,24 +121,42 @@
             <ul class="filter-bluetooth">
               <li>
                 <label>
-                  <input type="radio" name="bluetooth" value="yes" checked>
+                  <input class="visually-hidden filter-radio" type="radio" name="bluetooth" value="yes" checked>
                   <span>Есть</span>
                 </label>
               </li>
               <li>
                 <label>
-                  <input type="radio" name="bluetooth" value="no">
+                  <input class="visually-hidden filter-radio" type="radio" name="bluetooth" value="no">
                   <span>Нет</span>
                 </label>
               </li>
             </ul>
           </fieldset>
-          <button type="submit" class="filter-button">Показать</button>  
+          <button type="submit" class="filter-button"> <span>Показать</span></button>  
         </form>
       </section>
       <section class="catalog">
         <h2 class="visually-hidden">Список моноподов для селфи</h2><!--Позже скрыть-->
-        <div class="sort">Сортировка</div>
+        <div class="right-section">
+          <div class="collating">
+            <form class="filter-sort" method="get" action="https://echo.htmlacademy.ru">
+              <legend class="sort">Сортировка:</legend>
+              <ul class="filter-outer">
+                <li class="atprice"><a href="#">По цене</a></li>
+                <li class="bytype"><a href="#">По типу</a></li>
+                <li class="popularity"><a href="#">По популярности</a></li>
+              </ul>
+            </form>
+            <form class="filter-arrow" method="get" action="https://echo.htmlacademy.ru">
+              <legend class="visually-hidden">Фильтр расположение больше или меньше</legend>
+              <ul class="filter-separation">
+                <li class="more"><a href="#"></a></li>
+                <li class="less"><a href="#"></a></li>
+              </ul>
+            </form>
+          </div>
+        </div>
         <div class="item-list">
           <ul class="catalog-list">
             <li class="amateur">
@@ -180,7 +199,7 @@
               </ul><!--Всплывающее окно товара-->
             </li>
             <li class="follow">
-              <p class="catalog-item-image">
+              <p class="catalog-item-image new">
                 <img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
               </p>
               <div>
