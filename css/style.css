@@ -1,36 +1,36 @@
 @font-face {
-    font-family: "gilroylight";
+    font-family: "Gilroy";
     src: url("../fonts/gilroylight-webfont.woff2") format("woff2"),
          url("../fonts/gilroylight-webfont.woff") format("woff");
-    font-weight: normal;
+    font-weight: 300;
     font-style: normal;
 }
 @font-face {
-    font-family: "gilroyextrabold";
+    font-family: "Gilroy";
     src: url("../fonts/gilroyextrabold-webfont.woff2") format("woff2"),
          url("../fonts/gilroyextrabold-webfont.woff") format("woff");
-    font-weight: normal;
+    font-weight: 800;
     font-style: normal;
 }
 @font-face {
-    font-family: "open_sansregular";
+    font-family: "Open Sans";
     src: url("../fonts/opensans-regular-webfont.woff2") format("woff2"),
          url("../fonts/opensans-regular-webfont.woff") format("woff");
-    font-weight: normal;
+    font-weight: 400;
     font-style: normal;
 }
 @font-face {
-    font-family: "open_sanslight";
+    font-family: "Open Sans";
     src: url("../fonts/opensans-light-webfont.woff2") format("woff2"),
          url("../fonts/opensans-light-webfont.woff") format("woff");
-    font-weight: normal;
+    font-weight: 300;
     font-style: normal;
 }
 body {
     margin: 0;
     padding: 0;
   
-    font-family: "open_sanslight", Arial, sans-serif;
+    font-family: "Open Sans", Arial, sans-serif;
     font-size: 15px;
     line-height: 30px;
     font-weight: 300;
@@ -102,7 +102,7 @@ input[type="radio"].visually-hidden {
     padding-top: 10px;
 } 
 .main-navigation a {
-    font-family: "gilroyextrabold", Arial, sans-serif;
+    font-family: "Gilroy", Arial, sans-serif;
     font-size: 18px;
     line-height: 24px;
     font-weight: 800;
@@ -142,7 +142,7 @@ input[type="radio"].visually-hidden {
     min-height: 44px;
     border: none;
     background: #f7e296;
-    font-family: "open_sanslight", Arial, sans-serif;
+    font-family: "Open Sans", Arial, sans-serif;
     font-size: 15px;
     font-weight: 300;
     font-style: normal;
@@ -177,7 +177,7 @@ input[type="radio"].visually-hidden {
 .container-panel input#search{
     background: #f7e296;
     border: none;
-    font-family: "open_sanslight", Arial, sans-serif;
+    font-family: "Open Sans", Arial, sans-serif;
     font-size: 15px;
     font-weight: 300;
     font-style: normal;
@@ -189,7 +189,7 @@ input[type="radio"].visually-hidden {
 }
 .discover {
     display: none;
-    font-family: "open_sanslight", Arial, sans-serif;
+    font-family: "Open Sans", Arial, sans-serif;
     font-size: 15px;
     font-weight: 300;
     font-style: normal;
@@ -294,7 +294,7 @@ input[type="radio"].visually-hidden {
     top: 19px;
 }
 .site-panel a {
-    font-family: "open_sanslight", Arial, sans-serif;
+    font-family: "Open Sans", Arial, sans-serif;
     font-size: 15px;
     line-height: 30px;
     font-weight: 300;
@@ -335,7 +335,7 @@ input[type="radio"].visually-hidden {
     display:inherit;
 }
 .product span{
-    font-family: "open_sanslight", Arial, sans-serif;
+    font-family: "Open Sans", Arial, sans-serif;
     font-size: 35px;
     font-weight: 300;
     color: #000000;
@@ -390,7 +390,7 @@ input[type="radio"].visually-hidden {
 .submenu-cameras a,
 .submenu-watch a,
 .submenu-quadcopters a {
-    font-family: "open_sanslight", Arial, sans-serif;
+    font-family: "Open Sans", Arial, sans-serif;
     font-size: 15px;
     line-height: 36px;
     font-weight: 300;
@@ -438,7 +438,7 @@ input[type="radio"].visually-hidden {
     padding-top: 84px;
 }
 .slider-item h3 {
-    font-family: "gilroyextrabold", Arial, sans-serif;
+    font-family: "Gilroy", Arial, sans-serif;
     font-size: 47px;
     font-weight: 800;
     font-style: normal;
@@ -460,7 +460,7 @@ input[type="radio"].visually-hidden {
     max-width: 505px;
 }
 .slider-item p {
-    font-family: "open_sanslight", Arial, sans-serif;
+    font-family: "Open Sans", Arial, sans-serif;
     font-size: 15px;
     font-weight: 300;
     font-style: normal;
@@ -486,7 +486,7 @@ input[type="radio"].visually-hidden {
 .slider-button {
     display: block;
     box-sizing: border-box;
-    font-family: "gilroyextrabold", Arial, sans-serif;
+    font-family: "Gilroy", Arial, sans-serif;
     font-size: 18px;
     font-weight: 800;
     font-style: normal;
@@ -520,7 +520,7 @@ input[type="radio"].visually-hidden {
 }
 .table-values {
     list-style: none;
-    font-family: "gilroylight", Arial, sans-serif;
+    font-family: "Gilroy", Arial, sans-serif;
     font-size: 36px;
     font-weight: 300;
     font-style: normal;
@@ -543,7 +543,7 @@ input[type="radio"].visually-hidden {
     padding-left: 43px;
 }
 .table-labels th {
-    font-family: "open_sanslight", Arial, sans-serif;
+    font-family: "Open Sans", Arial, sans-serif;
     font-size: 13px;
     font-weight: 300;
     font-style: normal;
@@ -572,14 +572,12 @@ input[type="radio"].visually-hidden {
     width: 10px;
     height: 10px;
     margin-right: 21px;
-  
     margin-top: 5px;
-  
     background-color: transparent;
     border: 1px solid #000000;
     border-radius: 50%;
     cursor: pointer;
-  }
+}
 #product-1:checked ~ .slider-gradient #slide1,
 #product-2:checked ~ .slider-gradient #slide2,
 #product-3:checked ~ .slider-gradient #slide3 {
@@ -630,7 +628,7 @@ input[type="radio"].visually-hidden {
     background: #f7e296;
 }
 .icon-menu h2 {
-    font-family: "gilroyextrabold", Arial, sans-serif;
+    font-family: "Gilroy", Arial, sans-serif;
     font-size: 18px;
     font-weight: 800;
     font-style: normal;
@@ -731,7 +729,7 @@ input[type="radio"].visually-hidden {
     display: flex;
     position: relative;
     flex-direction: column;
-    font-family: "gilroyextrabold", Arial, sans-serif;
+    font-family: "Gilroy", Arial, sans-serif;
     font-size: 18px;
     font-weight: 800;
     font-style: normal;
@@ -779,7 +777,7 @@ input[type="radio"].visually-hidden {
     padding-left: 20px;
 }
 .roster-item h2 {
-    font-family: "gilroyextrabold", Arial, sans-serif;
+    font-family: "Gilroy", Arial, sans-serif;
     font-size: 47px;
     font-weight: 800;
     font-style: normal;
@@ -791,7 +789,7 @@ input[type="radio"].visually-hidden {
     margin: 0;
 }
 .roster-item p {
-    font-family: "open_sanslight", Arial, sans-serif;
+    font-family: "Open Sans", Arial, sans-serif;
     font-size: 15px;
     font-weight: 300;
     font-style: normal;
@@ -933,7 +931,7 @@ input[type="radio"].visually-hidden {
     background: #000000;
 }
 .about-us p {
-    font-family: "open_sanslight", Arial, sans-serif;
+    font-family: "Open Sans", Arial, sans-serif;
     font-size: 15px;
     font-weight: 300;
     font-style: normal;
@@ -989,7 +987,7 @@ input[type="radio"].visually-hidden {
 }
 .about-us h2,
 .exposure h2 {
-    font-family: "gilroyextrabold", Arial, sans-serif;
+    font-family: "Gilroy", Arial, sans-serif;
     font-size: 47px;
     line-height: 48px;
     font-weight: 800;
@@ -1006,7 +1004,7 @@ input[type="radio"].visually-hidden {
     padding-top: 39px;
 }
 .transport-company li { 
-    font-family: "gilroyextrabold", Arial, sans-serif;
+    font-family: "Gilroy", Arial, sans-serif;
     font-size: 16px;
     line-height: 40px;
     font-weight: 800;
@@ -1045,7 +1043,7 @@ input[type="radio"].visually-hidden {
     opacity: 0.3; 
 }
 .button {
-    font-family: "gilroyextrabold", Arial, sans-serif;
+    font-family: "Gilroy", Arial, sans-serif;
     font-size: 18px;
     font-weight: 800;
     line-height: 1.33;
@@ -1057,7 +1055,7 @@ input[type="radio"].visually-hidden {
     padding-top: 38px;
 }
 .page-title {
-    font-family: "gilroyextrabold", Arial, sans-serif;
+    font-family: "Gilroy", Arial, sans-serif;
     font-size: 47px;
     font-weight: 800;
     line-height: 48px;
@@ -1071,7 +1069,7 @@ input[type="radio"].visually-hidden {
 }
 .breadcrumbs p,
 .breadcrumbs-current p {
-    font-family: "open_sanslight", Arial, sans-serif;
+    font-family: "Open Sans", Arial, sans-serif;
     font-size: 14px;
     font-weight: 300;
     line-height: 24px;
@@ -1131,7 +1129,7 @@ input[type="radio"].visually-hidden {
     padding-left: 79px;
     margin-left: auto;
     width: 346px;
-    font-family: "gilroyextrabold", Arial, sans-serif;
+    font-family: "Gilroy", Arial, sans-serif;
     font-size: 16px;
     font-weight: 800;
     line-height: 1.5;
@@ -1152,7 +1150,7 @@ input[type="radio"].visually-hidden {
 }
 .cost-filling {
     margin-top: 11px;
-    font-family: "gilroyextrabold", Arial, sans-serif;
+    font-family: "Gilroy", Arial, sans-serif;
     font-size: 18px;
     font-weight: 800;
     line-height: 1.33;
@@ -1197,7 +1195,7 @@ input[type="radio"].visually-hidden {
 .price-controls {
     display: flex;
     padding-top: 9px;
-    font-family: "gilroylight", Arial, sans-serif;
+    font-family: "Gilroy", Arial, sans-serif;
     font-size: 14px;
     font-weight: 300;
     font-style: normal;
@@ -1356,7 +1354,7 @@ input[type="radio"].visually-hidden {
 .sort {
     margin: 0;
     padding-top: 5px;
-    font-family: "gilroyextrabold", Arial, sans-serif;
+    font-family: "Gilroy", Arial, sans-serif;
     font-size: 16px;
     font-weight: 800;
     line-height: 1.5;
@@ -1374,7 +1372,7 @@ input[type="radio"].visually-hidden {
     display: flex;
 }
 .filter-outer a {
-    font-family: "open_sansregular", Arial, sans-serif;
+    font-family: "Open Sans", Arial, sans-serif;
     font-size: 14px;
     font-weight: normal;
     font-style: normal;
@@ -1476,7 +1474,7 @@ input[type="radio"].visually-hidden {
     width: 260px;
     margin: 0;
     padding: 0;
-    font-family: "gilroyextrabold", Arial, sans-serif;
+    font-family: "Gilroy", Arial, sans-serif;
     font-size: 18px;
     font-weight: 800;
     font-style: normal;
@@ -1684,7 +1682,7 @@ input[type="radio"].visually-hidden {
 }
 .bluetooth,
 .colors {
-    font-family: "gilroyextrabold", Arial, sans-serif;
+    font-family: "Gilroy", Arial, sans-serif;
     font-size: 18px;
     font-weight: 800;
     line-height: 24px;
@@ -1694,7 +1692,7 @@ input[type="radio"].visually-hidden {
 }
 .filter-colors span, 
 .filter-bluetooth span {
-    font-family: "open_sanslight", Arial, sans-serif;
+    font-family: "Open Sans", Arial, sans-serif;
     font-size: 14px;
     font-weight: 300;
     line-height: 40px;
@@ -1703,14 +1701,14 @@ input[type="radio"].visually-hidden {
     list-style: none;
 }
 .filter-button {
-    font-family: "gilroyextrabold", Arial, sans-serif;
+    font-family: "Gilroy", Arial, sans-serif;
     font-size: 18px;
     font-weight: 800;
     letter-spacing: 3.6px;
     color: #000000;
 }
 .directory a {
-    font-family: "gilroyextrabold", Arial, sans-serif;
+    font-family: "Gilroy", Arial, sans-serif;
     font-size: 18px;
     font-weight: 800;
     line-height: 24px;
@@ -1724,7 +1722,7 @@ input[type="radio"].visually-hidden {
     padding: 0;
 }
 .catalog-item-price {
-    font-family: "gilroylight", Arial, sans-serif;
+    font-family: "Gilroy", Arial, sans-serif;
     font-size: 16px;
     font-weight: 300;
     line-height: 1.5;
@@ -1732,7 +1730,7 @@ input[type="radio"].visually-hidden {
     color: #464646;
 }
 .item-button-basket {
-    font-family: "gilroyextrabold", Arial, sans-serif;
+    font-family: "Gilroy", Arial, sans-serif;
     font-size: 18px;
     font-weight: 800;
     line-height: 24px;
@@ -1743,7 +1741,7 @@ input[type="radio"].visually-hidden {
     font-stretch: normal
 }
 .item-button-contrast {
-    font-family: "open_sanslight", Arial, sans-serif;
+    font-family: "Open Sans", Arial, sans-serif;
     font-size: 13px;
     font-weight: 300;
     line-height: 36px;
@@ -1751,7 +1749,7 @@ input[type="radio"].visually-hidden {
     color: rgba(0, 0, 0, 0.5);
 }
 .pagination-item a {
-    font-family: "gilroyextrabold", Arial, sans-serif;
+    font-family: "Gilroy", Arial, sans-serif;
     font-size: 16px;
     font-weight: 800;
     line-height: 24px;
@@ -1879,7 +1877,7 @@ input[type="radio"].visually-hidden {
 }
 .footer-panel a {
     opacity: 0.7;
-    font-family: "open_sanslight", Arial, sans-serif;
+    font-family: "Open Sans", Arial, sans-serif;
     font-size: 15px;
     font-weight: 300;
     line-height: 2.4;
@@ -1892,7 +1890,7 @@ input[type="radio"].visually-hidden {
     color: rgba(255, 255, 255, 0.3);
 }
 .footer-navigation a {
-    font-family: "gilroyextrabold", Arial, sans-serif;
+    font-family: "Gilroy", Arial, sans-serif;
     font-size: 18px;
     font-weight: 800;
     line-height: 1.33;
@@ -1935,7 +1933,7 @@ input[type="radio"].visually-hidden {
 }
 .adress,
 .telephone {
-    font-family: "open_sanslight", Arial, sans-serif;
+    font-family: "Open Sans", Arial, sans-serif;
     font-size: 15px;
     font-weight: 300;
     line-height: 30px;
@@ -1954,7 +1952,7 @@ input[type="radio"].visually-hidden {
 }
 
 .feedback span {
-    font-family: "gilroyextrabold", Arial, sans-serif;
+    font-family: "Gilroy", Arial, sans-serif;
     font-size: 18px;
     font-weight: 800;
     line-height: 1.33;
@@ -1966,7 +1964,7 @@ input[type="radio"].visually-hidden {
 .feedback textarea,
 .feedback input {
     box-sizing: border-box;
-    font-family: "open_sansregular", Arial, sans-serif;
+    font-family: "Open Sans", Arial, sans-serif;
     font-size: 14px;
     line-height: 1.29;
     font-weight: normal;
@@ -2000,7 +1998,7 @@ input[type="radio"].visually-hidden {
 }
 .feedback-button {
     display: block;
-    font-family: "gilroyextrabold", Arial, sans-serif;
+    font-family: "Gilroy", Arial, sans-serif;
     font-size: 18px;
     font-weight: 800;
     line-height: 24px;
