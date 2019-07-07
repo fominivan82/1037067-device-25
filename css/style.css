@@ -2412,6 +2412,7 @@ input[type="radio"].visually-hidden {
 }
 
 .feedback {
+    display: none;
     position: fixed;
     top: 50%;
     left: 50%;
