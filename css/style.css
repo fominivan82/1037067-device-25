@@ -65,19 +65,16 @@ img {
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
-  position: absolute;
-
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-
-  white-space: nowrap;
-
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 .wrapper {
     width: 1200px;
@@ -476,6 +473,9 @@ input[type="radio"].visually-hidden {
     margin-left: 599px;
     padding-top: 20px;
     padding-bottom: 50px;
+}
+.slide2-paragraph {
+    max-width: 482px;
 }
 .slide2-paragraph {
     max-width: 460px;
@@ -944,7 +944,7 @@ input[type="radio"].visually-hidden {
     color: #464646;
     padding-top: 3px;
     padding-bottom: 12px;
-    width: 470px;
+    width: 472px;
 }
 .exposure {
     margin: 0;
@@ -1499,6 +1499,7 @@ input[type="radio"].visually-hidden {
     padding-left: 0px;
 }
 .professional h3 {
+    width: 180px;
     padding-top: 22px;
     padding-left: 0px;
 }
